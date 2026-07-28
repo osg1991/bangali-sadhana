@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#7b1f32">
+  <meta name="description" content="An offline Bengali learning companion with practical lessons and build-time imported Ramprasad Sen vocabulary.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>বাংলা সাধনা · Bengali Sadhana</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content/base-content.js" defer></script>
+  <script src="content/generated/ramprasad-content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">বাংলা সাধনা</p>
+      <h1>Bengali Sadhana</h1>
+    </div>
+    <div class="header-actions">
+      <button id="install-button" class="icon-button install-button" hidden aria-label="Install app">Install</button>
+      <button id="settings-button" class="icon-button" aria-label="Open display settings">Aa</button>
+    </div>
+  </header>
+
+  <div class="status-row" aria-live="polite">
+    <span id="network-status" class="status-chip">Checking…</span>
+    <span id="streak-status" class="status-chip">0 days completed</span>
+  </div>
+
+  <main id="app" tabindex="-1"></main>
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <button data-view="today" class="nav-button active"><span>আজ</span><small>Today</small></button>
+    <button data-view="script" class="nav-button"><span>অক্ষর</span><small>Script</small></button>
+    <button data-view="words" class="nav-button"><span>শব্দ</span><small>Words</small></button>
+    <button data-view="sentences" class="nav-button"><span>বাক্য</span><small>Sentences</small></button>
+    <button data-view="songs" class="nav-button"><span>গান</span><small>Songs</small></button>
+  </nav>
+
+  <dialog id="settings-dialog">
+    <form method="dialog" class="dialog-card">
+      <div class="dialog-heading">
+        <h2>Display bridges</h2>
+        <button value="close" class="close-button" aria-label="Close">×</button>
+      </div>
+      <label class="toggle-row"><input id="show-roman" type="checkbox"> Roman transliteration</label>
+      <label class="toggle-row"><input id="show-devanagari" type="checkbox"> Devanagari bridge</label>
+      <label class="toggle-row"><input id="show-tamil" type="checkbox"> Tamil pronunciation bridge</label>
+      <p class="small-note">These controls change every learning card and are saved on this phone.</p>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <noscript>This app requires JavaScript.</noscript>
+</body>
+</html>

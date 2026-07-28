@@ -1,0 +1,740 @@
+{
+  "version": 1,
+  "description": "Reviewed Bengali word meanings used by the Ramprasad importer. The importer only publishes words found in the source lyrics.",
+  "entries": [
+    {
+      "bengali": "আমায়",
+      "roman": "āmāẏ",
+      "englishMeaning": "me",
+      "tamilMeaning": "என்னை",
+      "aliases": [
+        "আমায়"
+      ]
+    },
+    {
+      "bengali": "দে",
+      "roman": "de",
+      "englishMeaning": "give",
+      "tamilMeaning": "கொடு"
+    },
+    {
+      "bengali": "মা",
+      "roman": "mā",
+      "englishMeaning": "Mother",
+      "tamilMeaning": "அன்னை / தாய்"
+    },
+    {
+      "bengali": "পাগল",
+      "roman": "pāgol",
+      "englishMeaning": "mad; divinely intoxicated",
+      "tamilMeaning": "பித்தன்; தெய்வீகப் பரவசமடைந்தவர்"
+    },
+    {
+      "bengali": "করে",
+      "roman": "kore",
+      "englishMeaning": "does; makes",
+      "tamilMeaning": "செய்கிறாள்; ஆக்கி"
+    },
+    {
+      "bengali": "আর",
+      "roman": "ār",
+      "englishMeaning": "and; more; any longer",
+      "tamilMeaning": "மேலும்; மற்றும்; இனி"
+    },
+    {
+      "bengali": "কাজ",
+      "roman": "kāj",
+      "englishMeaning": "work; task",
+      "tamilMeaning": "வேலை; செயல்"
+    },
+    {
+      "bengali": "নাই",
+      "roman": "nāi",
+      "englishMeaning": "there is not",
+      "tamilMeaning": "இல்லை"
+    },
+    {
+      "bengali": "জ্ঞান",
+      "roman": "jñān",
+      "englishMeaning": "knowledge; spiritual wisdom",
+      "tamilMeaning": "ஞானம்; அறிவு"
+    },
+    {
+      "bengali": "বিচারে",
+      "roman": "bicāre",
+      "englishMeaning": "in reasoning or discrimination",
+      "tamilMeaning": "ஆராய்ச்சியில்; விவேகத்தில்"
+    },
+    {
+      "bengali": "ব্রহ্মময়ী",
+      "roman": "brahmamoyī",
+      "englishMeaning": "She who is filled with Brahman",
+      "tamilMeaning": "பிரம்மமயமான அன்னை",
+      "aliases": [
+        "ব্রহ্মময়ী"
+      ]
+    },
+    {
+      "bengali": "তোমার",
+      "roman": "tomār",
+      "englishMeaning": "your",
+      "tamilMeaning": "உன் / உங்கள்"
+    },
+    {
+      "bengali": "প্রেমের",
+      "roman": "premer",
+      "englishMeaning": "of love",
+      "tamilMeaning": "அன்பின்"
+    },
+    {
+      "bengali": "সুরা",
+      "roman": "surā",
+      "englishMeaning": "wine",
+      "tamilMeaning": "மது"
+    },
+    {
+      "bengali": "পানে",
+      "roman": "pāne",
+      "englishMeaning": "by drinking",
+      "tamilMeaning": "பருகுவதால்"
+    },
+    {
+      "bengali": "করি",
+      "roman": "kori",
+      "englishMeaning": "I do",
+      "tamilMeaning": "நான் செய்கிறேன்"
+    },
+    {
+      "bengali": "মাতোয়ারা",
+      "roman": "mātoẏārā",
+      "englishMeaning": "intoxicated; enraptured",
+      "tamilMeaning": "மயங்கிய; பரவசமடைந்த",
+      "aliases": [
+        "মাতোয়ারা"
+      ]
+    },
+    {
+      "bengali": "ভক্তচিত্তহরা",
+      "roman": "bhaktacittaharā",
+      "englishMeaning": "captivator of a devotee’s heart",
+      "tamilMeaning": "பக்தரின் உள்ளத்தைக் கவர்பவள்"
+    },
+    {
+      "bengali": "ডুবাও",
+      "roman": "ḍubāo",
+      "englishMeaning": "immerse; drown",
+      "tamilMeaning": "மூழ்கடிப்பாய்"
+    },
+    {
+      "bengali": "প্রেমসাগরে",
+      "roman": "premsāgore",
+      "englishMeaning": "in the ocean of love",
+      "tamilMeaning": "அன்புக் கடலில்"
+    },
+    {
+      "bengali": "এ",
+      "roman": "e",
+      "englishMeaning": "this",
+      "tamilMeaning": "இது / இந்த"
+    },
+    {
+      "bengali": "পাগলাগারদে",
+      "roman": "pāglāgārode",
+      "englishMeaning": "in the madhouse",
+      "tamilMeaning": "பித்தர் இல்லத்தில்"
+    },
+    {
+      "bengali": "কেহ",
+      "roman": "keho",
+      "englishMeaning": "someone; some person",
+      "tamilMeaning": "யாரோ; ஒருவர்"
+    },
+    {
+      "bengali": "হাসে",
+      "roman": "hāse",
+      "englishMeaning": "laughs",
+      "tamilMeaning": "சிரிக்கிறார்"
+    },
+    {
+      "bengali": "কাঁদে",
+      "roman": "kā̃de",
+      "englishMeaning": "cries",
+      "tamilMeaning": "அழுகிறார்"
+    },
+    {
+      "bengali": "নাচে",
+      "roman": "nāce",
+      "englishMeaning": "dances",
+      "tamilMeaning": "நடனமாடுகிறார்"
+    },
+    {
+      "bengali": "আনন্দ",
+      "roman": "ānondo",
+      "englishMeaning": "joy; bliss",
+      "tamilMeaning": "ஆனந்தம்"
+    },
+    {
+      "bengali": "ভরে",
+      "roman": "bhore",
+      "englishMeaning": "filled with",
+      "tamilMeaning": "நிறைந்து"
+    },
+    {
+      "bengali": "ঈশা",
+      "roman": "īśā",
+      "englishMeaning": "Jesus",
+      "tamilMeaning": "ஈசா / இயேசு"
+    },
+    {
+      "bengali": "বুদ্ধ",
+      "roman": "buddha",
+      "englishMeaning": "Buddha",
+      "tamilMeaning": "புத்தர்"
+    },
+    {
+      "bengali": "শ্রীচৈতন্য",
+      "roman": "śrīcaitanya",
+      "englishMeaning": "Sri Chaitanya",
+      "tamilMeaning": "ஸ்ரீ சைதன்யர்"
+    },
+    {
+      "bengali": "অচৈতন্য",
+      "roman": "ocaitanya",
+      "englishMeaning": "unconscious; lost in ecstasy",
+      "tamilMeaning": "உணர்விழந்த; பரவசத்தில் மூழ்கிய"
+    },
+    {
+      "bengali": "হায়",
+      "roman": "hāẏ",
+      "englishMeaning": "alas; ah",
+      "tamilMeaning": "ஐயோ; ஆஹா",
+      "aliases": [
+        "হায়"
+      ]
+    },
+    {
+      "bengali": "কবে",
+      "roman": "kobe",
+      "englishMeaning": "when",
+      "tamilMeaning": "எப்போது"
+    },
+    {
+      "bengali": "হব",
+      "roman": "hobo",
+      "englishMeaning": "I shall become",
+      "tamilMeaning": "நான் ஆவேன்"
+    },
+    {
+      "bengali": "ধন্য",
+      "roman": "dhonno",
+      "englishMeaning": "blessed",
+      "tamilMeaning": "பாக்கியசாலி; புனிதமான"
+    },
+    {
+      "bengali": "মিশে",
+      "roman": "miśe",
+      "englishMeaning": "merging; mixing",
+      "tamilMeaning": "கலந்து"
+    },
+    {
+      "bengali": "তার",
+      "roman": "tār",
+      "englishMeaning": "his; her; that one’s",
+      "tamilMeaning": "அவரது; அவளது"
+    },
+    {
+      "bengali": "ভিতরে",
+      "roman": "bhitore",
+      "englishMeaning": "inside; within",
+      "tamilMeaning": "உள்ளே"
+    },
+    {
+      "bengali": "আমার",
+      "roman": "āmār",
+      "englishMeaning": "my",
+      "tamilMeaning": "என்"
+    },
+    {
+      "bengali": "ত্বং",
+      "roman": "tvaṃ",
+      "englishMeaning": "you; Thou (Sanskrit)",
+      "tamilMeaning": "நீ (சமஸ்கிருதம்)"
+    },
+    {
+      "bengali": "হি",
+      "roman": "hi",
+      "englishMeaning": "indeed",
+      "tamilMeaning": "நிச்சயமாக"
+    },
+    {
+      "bengali": "তারা",
+      "roman": "tārā",
+      "englishMeaning": "Tara; saviouress",
+      "tamilMeaning": "தாரா; காப்பவள்"
+    },
+    {
+      "bengali": "তুমি",
+      "roman": "tumi",
+      "englishMeaning": "you",
+      "tamilMeaning": "நீ"
+    },
+    {
+      "bengali": "ত্রিগুণধরা",
+      "roman": "triguṇadharā",
+      "englishMeaning": "bearer of the three guṇas",
+      "tamilMeaning": "முக்குணங்களையும் தாங்குபவள்"
+    },
+    {
+      "bengali": "পরাত্পরা",
+      "roman": "parātparā",
+      "englishMeaning": "beyond the highest",
+      "tamilMeaning": "பரத்திற்கும் பரமானவள்",
+      "aliases": [
+        "পরাৎপরা",
+        "পরা ৎ পরা"
+      ]
+    },
+    {
+      "bengali": "আমি",
+      "roman": "āmi",
+      "englishMeaning": "I",
+      "tamilMeaning": "நான்"
+    },
+    {
+      "bengali": "জানি",
+      "roman": "jāni",
+      "englishMeaning": "I know",
+      "tamilMeaning": "நான் அறிவேன்"
+    },
+    {
+      "bengali": "দীনদয়াময়ী",
+      "roman": "dīnadayāmayī",
+      "englishMeaning": "compassionate to the humble",
+      "tamilMeaning": "எளியோர்மீது கருணைமிகு",
+      "aliases": [
+        "দীনদয়াময়ী"
+      ]
+    },
+    {
+      "bengali": "দুর্গমেতে",
+      "roman": "durgomete",
+      "englishMeaning": "in difficult places",
+      "tamilMeaning": "கடினமான இடங்களில்"
+    },
+    {
+      "bengali": "দুঃখহরা",
+      "roman": "duḥkhaharā",
+      "englishMeaning": "remover of sorrow",
+      "tamilMeaning": "துயரத்தை நீக்குபவள்"
+    },
+    {
+      "bengali": "জলে",
+      "roman": "jole",
+      "englishMeaning": "in water; in tears",
+      "tamilMeaning": "நீரில்; கண்ணீரில்"
+    },
+    {
+      "bengali": "স্থলে",
+      "roman": "sthole",
+      "englishMeaning": "on land",
+      "tamilMeaning": "நிலத்தில்"
+    },
+    {
+      "bengali": "আদ্যমূলে",
+      "roman": "ādyamūle",
+      "englishMeaning": "at the primordial root",
+      "tamilMeaning": "ஆதிமூலத்தில்"
+    },
+    {
+      "bengali": "গো",
+      "roman": "go",
+      "englishMeaning": "O; affectionate vocative",
+      "tamilMeaning": "ஓ; அன்பான அழைப்பு"
+    },
+    {
+      "bengali": "আছ",
+      "roman": "ācho",
+      "englishMeaning": "you are; you exist",
+      "tamilMeaning": "நீ இருக்கிறாய்"
+    },
+    {
+      "bengali": "সর্বঘটে",
+      "roman": "sorbôghoṭe",
+      "englishMeaning": "in every being or vessel",
+      "tamilMeaning": "ஒவ்வொரு உயிரிலும் / பாத்திரத்திலும்"
+    },
+    {
+      "bengali": "অর্ঘ্যপুটে",
+      "roman": "orghyapuṭe",
+      "englishMeaning": "in the vessel of offering",
+      "tamilMeaning": "அர்க்யப் பாத்திரத்தில்",
+      "aliases": [
+        "অক্ষপুটে"
+      ]
+    },
+    {
+      "bengali": "সাকার",
+      "roman": "sākār",
+      "englishMeaning": "with form",
+      "tamilMeaning": "உருவமுடைய"
+    },
+    {
+      "bengali": "আকার",
+      "roman": "ākār",
+      "englishMeaning": "form; shape",
+      "tamilMeaning": "உருவம்"
+    },
+    {
+      "bengali": "নিরাকারা",
+      "roman": "nirākārā",
+      "englishMeaning": "formless",
+      "tamilMeaning": "உருவமற்றவள்"
+    },
+    {
+      "bengali": "সন্ধ্যা",
+      "roman": "sandhyā",
+      "englishMeaning": "twilight worship",
+      "tamilMeaning": "சந்த்யா வழிபாடு"
+    },
+    {
+      "bengali": "গায়ত্রী",
+      "roman": "gāyatrī",
+      "englishMeaning": "Gayatri",
+      "tamilMeaning": "காயத்ரி",
+      "aliases": [
+        "গায়ত্রী"
+      ]
+    },
+    {
+      "bengali": "জগদ্ধাত্রী",
+      "roman": "jagaddhātrī",
+      "englishMeaning": "supporter of the universe",
+      "tamilMeaning": "உலகைத் தாங்குபவள்"
+    },
+    {
+      "bengali": "অকুলের",
+      "roman": "okuler",
+      "englishMeaning": "of those without refuge",
+      "tamilMeaning": "ஆதரவற்றோரின்"
+    },
+    {
+      "bengali": "প্রাণকর্ত্রী",
+      "roman": "prāṇakartrī",
+      "englishMeaning": "giver or controller of life",
+      "tamilMeaning": "உயிரை அளித்து நடத்துபவள்"
+    },
+    {
+      "bengali": "বসিলেন",
+      "roman": "bosilen",
+      "englishMeaning": "sat; took her seat",
+      "tamilMeaning": "அமர்ந்தாள்"
+    },
+    {
+      "bengali": "হেমবরণী",
+      "roman": "hemabaraṇī",
+      "englishMeaning": "golden-hued lady",
+      "tamilMeaning": "பொன்னிறமுடையவள்"
+    },
+    {
+      "bengali": "হেরম্বে",
+      "roman": "herambe",
+      "englishMeaning": "with Heramba (Ganesha)",
+      "tamilMeaning": "ஹேரம்பனுடன் (கணேசன்)"
+    },
+    {
+      "bengali": "লয়ে",
+      "roman": "loẏe",
+      "englishMeaning": "taking; holding",
+      "tamilMeaning": "ஏந்தி; எடுத்துக்கொண்டு",
+      "aliases": [
+        "ল'য়ে",
+        "লয়ে"
+      ]
+    },
+    {
+      "bengali": "কোলে",
+      "roman": "kole",
+      "englishMeaning": "on the lap",
+      "tamilMeaning": "மடியில்"
+    },
+    {
+      "bengali": "হেরি",
+      "roman": "heri",
+      "englishMeaning": "seeing; beholding",
+      "tamilMeaning": "கண்டு"
+    },
+    {
+      "bengali": "গণেশ",
+      "roman": "gaṇeś",
+      "englishMeaning": "Ganesha",
+      "tamilMeaning": "கணேசன்"
+    },
+    {
+      "bengali": "জননী",
+      "roman": "jananī",
+      "englishMeaning": "mother",
+      "tamilMeaning": "தாய்"
+    },
+    {
+      "bengali": "রূপ",
+      "roman": "rūp",
+      "englishMeaning": "form; appearance",
+      "tamilMeaning": "வடிவம்"
+    },
+    {
+      "bengali": "রাণী",
+      "roman": "rāṇī",
+      "englishMeaning": "queen",
+      "tamilMeaning": "இராணி"
+    },
+    {
+      "bengali": "ভাসেন",
+      "roman": "bhāsen",
+      "englishMeaning": "floats; is flooded",
+      "tamilMeaning": "மிதக்கிறாள்; நிரம்புகிறாள்"
+    },
+    {
+      "bengali": "নয়ন",
+      "roman": "nôẏon",
+      "englishMeaning": "eye",
+      "tamilMeaning": "கண்",
+      "aliases": [
+        "নয়ন"
+      ]
+    },
+    {
+      "bengali": "ব্রহ্মাদি",
+      "roman": "brahmādi",
+      "englishMeaning": "Brahma and the other gods",
+      "tamilMeaning": "பிரம்மன் முதலிய தேவர்கள்"
+    },
+    {
+      "bengali": "বালক",
+      "roman": "bālok",
+      "englishMeaning": "child",
+      "tamilMeaning": "குழந்தை"
+    },
+    {
+      "bengali": "যার",
+      "roman": "yār",
+      "englishMeaning": "whose",
+      "tamilMeaning": "யாருடைய"
+    },
+    {
+      "bengali": "গিরিবালিকা",
+      "roman": "girībālikā",
+      "englishMeaning": "daughter of the mountain",
+      "tamilMeaning": "மலைமகள்",
+      "aliases": [
+        "গিরি-বালিকা"
+      ]
+    },
+    {
+      "bengali": "সেই",
+      "roman": "sei",
+      "englishMeaning": "that very one; she herself",
+      "tamilMeaning": "அவளே; அதுவே"
+    },
+    {
+      "bengali": "পদতলে",
+      "roman": "podotole",
+      "englishMeaning": "beneath the feet",
+      "tamilMeaning": "திருவடிகளின் கீழ்"
+    },
+    {
+      "bengali": "ভানু",
+      "roman": "bhānu",
+      "englishMeaning": "sun",
+      "tamilMeaning": "சூரியன்"
+    },
+    {
+      "bengali": "চন্দ্রধরা",
+      "roman": "candradharā",
+      "englishMeaning": "bearer of the moon",
+      "tamilMeaning": "சந்திரனைத் தாங்குபவள்"
+    },
+    {
+      "bengali": "মন",
+      "roman": "mon",
+      "englishMeaning": "mind",
+      "tamilMeaning": "மனம்"
+    },
+    {
+      "bengali": "রে",
+      "roman": "re",
+      "englishMeaning": "O! (vocative particle)",
+      "tamilMeaning": "ஓ! (அழைப்புச் சொல்)"
+    },
+    {
+      "bengali": "কৃষিকাজ",
+      "roman": "kṛṣikāj",
+      "englishMeaning": "farming; cultivation",
+      "tamilMeaning": "விவசாயம்; பயிரிடுதல்"
+    },
+    {
+      "bengali": "জানো",
+      "roman": "jāno",
+      "englishMeaning": "you know",
+      "tamilMeaning": "நீ அறிவாய்"
+    },
+    {
+      "bengali": "না",
+      "roman": "nā",
+      "englishMeaning": "not; no",
+      "tamilMeaning": "இல்லை; அல்ல"
+    },
+    {
+      "bengali": "এমন",
+      "roman": "emon",
+      "englishMeaning": "such; like this",
+      "tamilMeaning": "இப்படிப்பட்ட"
+    },
+    {
+      "bengali": "মানব",
+      "roman": "mānob",
+      "englishMeaning": "human",
+      "tamilMeaning": "மனித"
+    },
+    {
+      "bengali": "জমিন",
+      "roman": "jamin",
+      "englishMeaning": "land; field",
+      "tamilMeaning": "நிலம்; வயல்"
+    },
+    {
+      "bengali": "রইলো",
+      "roman": "roilo",
+      "englishMeaning": "remained; was left",
+      "tamilMeaning": "இருந்தது; விடப்பட்டது"
+    },
+    {
+      "bengali": "পতিত",
+      "roman": "potito",
+      "englishMeaning": "fallow; neglected",
+      "tamilMeaning": "தரிசாக; புறக்கணிக்கப்பட்ட"
+    },
+    {
+      "bengali": "আবাদ",
+      "roman": "ābād",
+      "englishMeaning": "cultivation",
+      "tamilMeaning": "பயிரிடுதல்"
+    },
+    {
+      "bengali": "করলে",
+      "roman": "korle",
+      "englishMeaning": "if one does; if cultivated",
+      "tamilMeaning": "செய்தால்; பயிரிட்டால்"
+    },
+    {
+      "bengali": "ফলত",
+      "roman": "pholoto",
+      "englishMeaning": "would yield; bear fruit",
+      "tamilMeaning": "விளையும்; பயன் தரும்"
+    },
+    {
+      "bengali": "সোনা",
+      "roman": "sonā",
+      "englishMeaning": "gold",
+      "tamilMeaning": "தங்கம்"
+    },
+    {
+      "bengali": "সকলি",
+      "roman": "śokoli",
+      "englishMeaning": "everything; all",
+      "tamilMeaning": "எல்லாம்"
+    },
+    {
+      "bengali": "তোমারি",
+      "roman": "tomāri",
+      "englishMeaning": "yours alone",
+      "tamilMeaning": "உன்னுடையதே"
+    },
+    {
+      "bengali": "ইচ্ছা",
+      "roman": "icchā",
+      "englishMeaning": "will; wish",
+      "tamilMeaning": "விருப்பம்; திருவுளம்"
+    },
+    {
+      "bengali": "ইচ্ছাময়ী",
+      "roman": "icchāmoyī",
+      "englishMeaning": "embodiment or sovereign of will",
+      "tamilMeaning": "இச்சையின் வடிவானவள்",
+      "aliases": [
+        "ইচ্ছাময়ী"
+      ]
+    },
+    {
+      "bengali": "কর্ম",
+      "roman": "kormo",
+      "englishMeaning": "action; deed",
+      "tamilMeaning": "செயல்; கர்மம்"
+    },
+    {
+      "bengali": "করো",
+      "roman": "koro",
+      "englishMeaning": "you do",
+      "tamilMeaning": "நீ செய்கிறாய்"
+    },
+    {
+      "bengali": "লোকে",
+      "roman": "loke",
+      "englishMeaning": "people; the world",
+      "tamilMeaning": "மக்கள்; உலகம்"
+    },
+    {
+      "bengali": "বলে",
+      "roman": "bole",
+      "englishMeaning": "says; they say",
+      "tamilMeaning": "சொல்கிறார்கள்"
+    },
+    {
+      "bengali": "পঙ্কে",
+      "roman": "poṅke",
+      "englishMeaning": "in mud; in mire",
+      "tamilMeaning": "சேற்றில்"
+    },
+    {
+      "bengali": "বদ্ধ",
+      "roman": "boddho",
+      "englishMeaning": "bound; imprisoned",
+      "tamilMeaning": "கட்டுண்ட; சிறைப்பட்ட"
+    },
+    {
+      "bengali": "কর",
+      "roman": "kor",
+      "englishMeaning": "do; make",
+      "tamilMeaning": "செய்"
+    },
+    {
+      "bengali": "পঙ্গুরে",
+      "roman": "poṅgure",
+      "englishMeaning": "the disabled person",
+      "tamilMeaning": "நடக்க இயலாதவரை"
+    },
+    {
+      "bengali": "লঙ্ঘাও",
+      "roman": "loṅghāo",
+      "englishMeaning": "make cross; enable to leap over",
+      "tamilMeaning": "கடக்கச் செய்"
+    },
+    {
+      "bengali": "গিরি",
+      "roman": "giri",
+      "englishMeaning": "mountain",
+      "tamilMeaning": "மலை"
+    },
+    {
+      "bengali": "ও",
+      "roman": "o",
+      "englishMeaning": "O; and",
+      "tamilMeaning": "ஓ; மற்றும்"
+    },
+    {
+      "bengali": "বালিকা",
+      "roman": "bālikā",
+      "englishMeaning": "girl; daughter",
+      "tamilMeaning": "சிறுமி; மகள்"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "bengali-sadhana",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline-first Bengali learning PWA with build-time Ramprasad Sen song and vocabulary import.",
+  "scripts": {
+    "sync:ramprasad": "node scripts/sync-ramprasad.mjs",
+    "build": "npm run sync:ramprasad && npm run validate",
+    "test": "node --test",
+    "validate": "node scripts/validate-app.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

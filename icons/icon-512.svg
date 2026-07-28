@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Bengali Sadhana">
+  <rect width="512" height="512" rx="112" fill="#7b1f32"/>
+  <rect x="48" y="48" width="416" height="416" rx="90" fill="#fffaf5"/>
+  <text x="256" y="296" text-anchor="middle" font-family="system-ui, sans-serif" font-size="192" font-weight="800" fill="#7b1f32">BS</text>
+  <text x="256" y="378" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" font-weight="700" letter-spacing="8" fill="#ba7b26">LEARN</text>
+</svg>
