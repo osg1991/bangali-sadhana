@@ -6,6 +6,7 @@
   "description": "Offline-first Bengali learning PWA with complete script coverage and build-time Ramprasad Sen song vocabulary import.",
   "scripts": {
     "sync:ramprasad": "node scripts/sync-ramprasad-v13.mjs",
+    "sync:all": "npm run sync:ramprasad",
     "build": "npm run sync:ramprasad && npm run validate",
     "test": "node --test",
     "validate": "node scripts/validate-app.mjs"
