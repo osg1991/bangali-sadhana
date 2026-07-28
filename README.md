@@ -49,8 +49,8 @@ The browser application remains framework-free. Node.js is used only for content
 ## First setup
 
 ```bash
-git clone https://github.com/osg1991/bengali-sadhana.git
-cd bengali-sadhana
+git clone https://github.com/osg1991/bangali-sadhana.git
+cd bangali-sadhana
 npm ci
 npm test
 npm run validate
@@ -63,8 +63,8 @@ npm run validate
 ```bash
 cd ~/Work/Github
 git clone https://github.com/osg1991/RamprasadSen.git
-git clone https://github.com/osg1991/bengali-sadhana.git
-cd bengali-sadhana
+git clone https://github.com/osg1991/bangali-sadhana.git
+cd bangali-sadhana
 npm ci
 npm run sync:ramprasad -- --source ../RamprasadSen
 npm test
@@ -104,7 +104,7 @@ Add reviewed English and Tamil meanings for useful unmapped forms, rerun the imp
 
 ## Automatic synchronization
 
-The included GitHub Actions workflow runs weekly and can also be started manually from the **Actions** tab. It checks out both repositories, imports the current songs, runs tests, and commits `content/generated/` only when it changed.
+The included GitHub Actions workflow runs weekly and can also be started manually from the **Actions** tab. It checks out both repositories, imports the current songs, runs tests, validates the PWA and commits `content/generated/` only when it changed.
 
 ## Run the PWA locally
 
@@ -122,7 +122,7 @@ Open `http://localhost:8080`.
 2. Open **Settings → Pages**.
 3. Choose **Deploy from a branch**.
 4. Select `main` and `/(root)`.
-5. Open `https://osg1991.github.io/bengali-sadhana/`.
+5. Open `https://osg1991.github.io/bangali-sadhana/`.
 
 The generated content is committed, so GitHub Pages does not need to run Node.js or a separate build process.
 
