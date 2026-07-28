@@ -1,0 +1,67 @@
+name: Sync Ramprasad content
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * 0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-ramprasad-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Bengali Sadhana
+        uses: actions/checkout@v4
+        with:
+          path: app
+
+      - name: Check out Ramprasad Sen archive
+        uses: actions/checkout@v4
+        with:
+          repository: osg1991/RamprasadSen
+          path: RamprasadSen
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - name: Install dependencies
+        working-directory: app
+        run: npm ci
+
+      - name: Import songs and reviewed vocabulary
+        working-directory: app
+        run: npm run sync:ramprasad -- --source ../RamprasadSen
+
+      - name: Run tests
+        working-directory: app
+        run: npm test
+
+      - name: Validate PWA
+        working-directory: app
+        run: npm run validate
+
+      - name: Commit generated changes
+        working-directory: app
+        shell: bash
+        run: |
+          if git diff --quiet -- content/generated; then
+            echo "No generated content changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/generated
+          git commit -m "chore: sync Ramprasad content"
+          git push
