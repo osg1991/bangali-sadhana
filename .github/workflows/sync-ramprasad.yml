@@ -4,6 +4,16 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 2 * * 0"
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/sync-ramprasad-v13.mjs
+      - content/ramprasad-vocabulary.json
+      - tests/**
+      - package.json
+      - package-lock.json
+      - .github/workflows/sync-ramprasad.yml
 
 permissions:
   contents: write
@@ -39,7 +49,7 @@ jobs:
         working-directory: app
         run: npm ci
 
-      - name: Import songs and reviewed vocabulary
+      - name: Import all songs and lyric vocabulary
         working-directory: app
         run: npm run sync:ramprasad -- --source ../RamprasadSen
 
@@ -63,5 +73,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add content/generated
-          git commit -m "chore: sync Ramprasad content"
+          git commit -m "chore: sync complete Ramprasad content"
           git push

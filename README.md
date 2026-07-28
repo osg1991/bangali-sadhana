@@ -2,18 +2,37 @@
 
 An installable, offline-first Bengali learning PWA for short daily study, practical speech and devotional immersion through Ramprasad Sen songs.
 
-## What changed in v1.2
+## v1.3 content expansion
 
-This repository now contains a build-time content importer.
+- Complete foundational Bengali script inventory: standard and rare vowels, all consonants and additional letters, vowel signs, nasal and orthographic signs, Bengali numerals and a broad set of common conjunct forms.
+- Every parseable numbered song file in `osg1991/RamprasadSen` is imported at build time.
+- Every distinct Bengali lyric word form from those songs is added to the vocabulary library.
+- Reviewed forms show exact English and Tamil word meanings.
+- Forms awaiting word-level review remain visible with their song, source line and line-level English/Tamil context.
+- Daily lessons continue to use reviewed Ramprasad vocabulary; pending forms become eligible after their meanings are reviewed.
 
-- `osg1991/RamprasadSen` remains the canonical song archive.
-- The importer parses song Markdown and the README MP3 index.
-- Song verses and translations are normalized into generated JSON.
-- Reviewed Bengali lyric words receive English and Tamil meanings.
-- Every daily lesson contains three practical words and two words from the day’s song whenever possible.
-- Unknown lyric forms are written to a curation report instead of receiving guessed meanings.
+Bengali supports many productive conjunct combinations. The app includes the high-frequency foundational set rather than claiming that a finite list represents every theoretically possible conjunct.
 
-The committed generated snapshot contains five starter songs and 115 reviewed lyric words. Running the importer against the complete source repository refreshes the snapshot from every parseable numbered song file.
+## Source-of-truth model
+
+```text
+osg1991/RamprasadSen
+        │ canonical lyrics and MP3 index
+        ▼
+scripts/sync-ramprasad-v13.mjs
+        │ parse, normalise, tokenize and classify
+        ▼
+content/generated/
+        │ songs + every lyric word form
+        ▼
+Bengali Sadhana daily lessons and libraries
+```
+
+Unknown words are never assigned guessed word meanings. They are marked as pending and retain translated source-line context until reviewed in:
+
+```text
+content/ramprasad-vocabulary.json
+```
 
 ## Repository structure
 
@@ -27,14 +46,16 @@ The committed generated snapshot contains five starter songs and 115 reviewed ly
 │       ├── ramprasad-content.js
 │       ├── ramprasad-meta.json
 │       ├── ramprasad-report.md
+│       ├── ramprasad-reviewed-words.json
 │       ├── ramprasad-songs.json
 │       ├── ramprasad-unmapped-words.json
 │       └── ramprasad-words.json
 ├── docs/content-pipeline.md
 ├── scripts/
 │   ├── sync-ramprasad.mjs
+│   ├── sync-ramprasad-v13.mjs
 │   └── validate-app.mjs
-├── tests/sync-ramprasad.test.mjs
+├── tests/
 ├── app.js
 ├── index.html
 ├── styles.css
@@ -44,7 +65,7 @@ The committed generated snapshot contains five starter songs and 115 reviewed ly
 └── package-lock.json
 ```
 
-The browser application remains framework-free. Node.js is used only for content synchronization, tests and validation.
+The browser application remains framework-free. Node.js is used only for content synchronisation, tests and validation.
 
 ## First setup
 
@@ -56,9 +77,9 @@ npm test
 npm run validate
 ```
 
-## Synchronize from RamprasadSen
+## Synchronise from RamprasadSen
 
-### Method A: adjacent local checkout
+### Adjacent local checkout
 
 ```bash
 cd ~/Work/Github
@@ -71,7 +92,7 @@ npm test
 npm run validate
 ```
 
-### Method B: let the script clone the source
+### Let the script clone the source
 
 ```bash
 npm ci
@@ -80,33 +101,30 @@ npm run build
 
 When no source path is supplied, the script clones the public archive into `.cache/RamprasadSen`.
 
-### Method C: environment variable
-
-```bash
-RAMPRASAD_REPO_DIR=/absolute/path/to/RamprasadSen npm run sync:ramprasad
-```
-
 ## Vocabulary review workflow
 
-Song files generally contain line-level meanings, not trustworthy word-by-word meanings. The importer therefore publishes only words present in the reviewed dictionary:
-
-```text
-content/ramprasad-vocabulary.json
-```
-
-After a sync, inspect:
+After each sync, inspect:
 
 ```text
 content/generated/ramprasad-report.md
+content/generated/ramprasad-unmapped-words.json
 ```
 
-Add reviewed English and Tamil meanings for useful unmapped forms, rerun the importer and commit the generated changes. See [`docs/content-pipeline.md`](docs/content-pipeline.md) for the data model and curation procedure.
+Add verified English and Tamil meanings to `content/ramprasad-vocabulary.json`, rerun the importer and commit the generated changes. See [`docs/content-pipeline.md`](docs/content-pipeline.md) for the data model.
 
-## Automatic synchronization
+## Automatic synchronisation
 
-The included GitHub Actions workflow runs weekly and can also be started manually from the **Actions** tab. It checks out both repositories, imports the current songs, runs tests, validates the PWA and commits `content/generated/` only when it changed.
+The GitHub Actions workflow:
 
-## Run the PWA locally
+- runs whenever the v1.3 importer or reviewed dictionary changes on `main`;
+- runs weekly;
+- can be started manually from the **Actions** tab;
+- checks out both repositories;
+- imports all currently available numbered song files;
+- runs tests and validates the PWA;
+- commits `content/generated/` only when the generated content changed.
+
+## Run locally
 
 A service worker requires HTTP rather than opening `index.html` directly.
 
@@ -116,15 +134,24 @@ python3 -m http.server 8080
 
 Open `http://localhost:8080`.
 
-## Deploy with GitHub Pages
+## Deploy free with Cloudflare Pages
 
-1. Push the repository to GitHub.
-2. Open **Settings → Pages**.
-3. Choose **Deploy from a branch**.
-4. Select `main` and `/(root)`.
-5. Open `https://osg1991.github.io/bangali-sadhana/`.
+The repository can remain private.
 
-The generated content is committed, so GitHub Pages does not need to run Node.js or a separate build process.
+1. Open **Cloudflare Dashboard → Workers & Pages**.
+2. Select **Create application → Pages → Connect to Git**.
+3. Authorise and select `osg1991/bangali-sadhana`.
+4. Use:
+
+```text
+Production branch: main
+Framework preset: None
+Build command: leave blank
+Build output directory: /
+Root directory: /
+```
+
+Cloudflare redeploys whenever GitHub receives generated content updates.
 
 ## Install on Android
 
@@ -141,8 +168,6 @@ npm test
 npm run validate
 ```
 
-The tests cover labelled, grouped and alternating song Markdown formats, token normalization, and README audio-link extraction.
+## Licence
 
-## License
-
-No open-source license has been selected yet. Add a `LICENSE` file before accepting external redistribution or contributions.
+No open-source licence has been selected yet. Add a `LICENSE` file before accepting external redistribution or contributions.
