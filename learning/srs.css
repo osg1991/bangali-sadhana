@@ -1,5 +1,6 @@
 .bottom-nav { grid-template-columns: repeat(6, 1fr); }
 .nav-button[data-view="review"] span { font-size: .78rem; }
+body:not(:has(.nav-button[data-view="today"].active)) .srs-today-panel { display: none; }
 
 .srs-today-panel {
   display: flex;
