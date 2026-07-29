@@ -8,8 +8,10 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const required = [
   'index.html', 'app.js', 'styles.css', 'sw.js', 'manifest.webmanifest',
-  'content/base-content.js', 'content/generated/ramprasad-content.js',
+  'content/base-content.js', 'content/complete-script.js',
+  'content/generated/ramprasad-content.js',
   'content/generated/ramprasad-songs.json', 'content/generated/ramprasad-words.json',
+  'learning/srs-engine.js', 'learning/srs-app.js', 'learning/srs.css',
   'icons/icon-192.png', 'icons/icon-512.png'
 ];
 
@@ -17,7 +19,10 @@ for (const file of required) {
   if (!existsSync(join(root, file))) throw new Error(`Missing required file: ${file}`);
 }
 
-for (const file of ['app.js', 'sw.js', 'content/base-content.js', 'content/generated/ramprasad-content.js']) {
+for (const file of [
+  'app.js', 'sw.js', 'content/base-content.js', 'content/complete-script.js',
+  'content/generated/ramprasad-content.js', 'learning/srs-engine.js', 'learning/srs-app.js'
+]) {
   execFileSync(process.execPath, ['--check', join(root, file)], { stdio: 'inherit' });
 }
 
@@ -27,8 +32,18 @@ for (const file of ['ramprasad-meta.json', 'ramprasad-songs.json', 'ramprasad-wo
 }
 
 const index = readFileSync(join(root, 'index.html'), 'utf8');
-for (const reference of ['content/base-content.js', 'content/generated/ramprasad-content.js', 'app.js', 'styles.css']) {
+for (const reference of [
+  'content/base-content.js', 'content/complete-script.js',
+  'content/generated/ramprasad-content.js',
+  'learning/srs-engine.js', 'learning/srs-app.js', 'learning/srs.css',
+  'app.js', 'styles.css'
+]) {
   if (!index.includes(reference)) throw new Error(`index.html does not load ${reference}`);
+}
+
+const serviceWorker = readFileSync(join(root, 'sw.js'), 'utf8');
+for (const offlineFile of ['learning/srs-engine.js', 'learning/srs-app.js', 'learning/srs.css']) {
+  if (!serviceWorker.includes(offlineFile)) throw new Error(`sw.js does not cache ${offlineFile}`);
 }
 
 console.log('Static application validation passed.');

@@ -1,0 +1,77 @@
+.bottom-nav { grid-template-columns: repeat(6, 1fr); }
+.nav-button[data-view="review"] span { font-size: .78rem; }
+body:not(:has(.nav-button[data-view="today"].active)) .srs-today-panel { display: none; }
+
+.srs-today-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 12px;
+  border-inline-start: 4px solid var(--accent);
+}
+.srs-today-panel h2 { margin: 8px 0 2px; font-size: 1.18rem; }
+
+.srs-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 14px 0;
+}
+.srs-stat { text-align: center; padding: 14px 8px; }
+.srs-stat strong { display: block; font-size: 1.55rem; color: var(--primary); }
+.srs-stat span { color: var(--muted); font-size: .78rem; }
+.srs-dashboard-card { margin-top: 12px; }
+.srs-dashboard-card h2, .srs-dashboard-card h3 { margin-top: 0; }
+
+.srs-session-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.srs-session-head .kicker { margin: 0; color: var(--muted); }
+.srs-session-head h2 { margin: 2px 0 0; }
+.srs-progress { margin: 12px 0; background: var(--surface-soft); }
+.srs-progress .progress-fill { background: var(--primary); }
+.srs-question-card { padding: 20px; }
+.srs-prompt { margin: 22px 0 16px; }
+.srs-options .quiz-option { min-height: 48px; }
+.srs-feedback {
+  margin-top: 16px;
+  padding: 13px;
+  border-radius: 13px;
+  background: var(--surface-soft);
+}
+.srs-feedback p { margin: 5px 0 0; line-height: 1.45; }
+.srs-feedback.correct { border-inline-start: 4px solid var(--success); }
+.srs-feedback.wrong { border-inline-start: 4px solid #b94b4b; }
+.srs-ratings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 14px;
+}
+.srs-ratings button {
+  min-height: 54px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--ink);
+}
+.srs-ratings strong, .srs-ratings small { display: block; }
+.srs-ratings small { color: var(--muted); margin-top: 2px; }
+.srs-hint { text-align: center; margin-top: 15px; }
+.srs-finish { margin-top: 14px; }
+.srs-finish .action-row { justify-content: center; }
+
+@media (min-width: 680px) {
+  .srs-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .srs-ratings { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+@media (max-width: 520px) {
+  .srs-today-panel { align-items: stretch; flex-direction: column; }
+  .srs-today-panel .primary-button { width: 100%; }
+  .bottom-nav { overflow-x: auto; grid-template-columns: repeat(6, minmax(62px, 1fr)); }
+}
