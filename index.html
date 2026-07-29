@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#7b1f32">
-  <meta name="description" content="An offline Bengali learning companion with practical lessons and build-time imported Ramprasad Sen vocabulary.">
+  <meta name="description" content="An offline Bengali learning companion with practical lessons, Ramprasad Sen vocabulary and spaced-repetition review.">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -16,6 +16,8 @@
   <script src="content/base-content.js" defer></script>
   <script src="content/complete-script.js" defer></script>
   <script src="content/generated/ramprasad-content.js" defer></script>
+  <script src="learning/srs-engine.js" defer></script>
+  <script src="learning/srs-app.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -39,6 +41,7 @@
 
   <nav class="bottom-nav" aria-label="Main navigation">
     <button data-view="today" class="nav-button active"><span>আজ</span><small>Today</small></button>
+    <button data-view="review" class="nav-button"><span>পুনরাবৃত্তি</span><small>Review</small></button>
     <button data-view="script" class="nav-button"><span>অক্ষর</span><small>Script</small></button>
     <button data-view="words" class="nav-button"><span>শব্দ</span><small>Words</small></button>
     <button data-view="sentences" class="nav-button"><span>বাক্য</span><small>Sentences</small></button>
