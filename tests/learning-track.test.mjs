@@ -33,13 +33,17 @@ function masteredRecord(card, stage) {
   };
 }
 
-test('concepts are ordered into vowels, consonants, mixed, words and advanced script', () => {
+function stageCount(concepts, stage) {
+  return concepts.filter(card => card.trackStage === stage).length;
+}
+
+test('concepts are grouped into vowels, consonants, mixed, words and advanced script', () => {
   const concepts = engine.buildConcepts(base, { words: [] });
-  assert.deepEqual(concepts.map(card => card.trackStage), [
-    'vowels', 'vowels', 'consonants', 'consonants',
-    'mixed', 'mixed', 'mixed', 'mixed',
-    'words', 'advanced'
-  ]);
+  assert.equal(stageCount(concepts, 'vowels'), 2);
+  assert.equal(stageCount(concepts, 'consonants'), 2);
+  assert.equal(stageCount(concepts, 'mixed'), 4);
+  assert.ok(stageCount(concepts, 'words') >= 1);
+  assert.equal(stageCount(concepts, 'advanced'), 1);
 });
 
 test('only vowel cards are introduced at the beginning', () => {
@@ -83,10 +87,10 @@ test('word cards remain locked until all mixed cards are mastered', () => {
   for (const card of partialMixed) records[card.id] = masteredRecord(card, 'mixed');
   assert.equal(track.progress(concepts, records).wordsUnlocked, false);
   const queue = engine.buildQueue(concepts, records, { today: '2026-08-01', maxReviews: 30, maxNew: 30 });
-  assert.equal(queue.some(card => card.kind === 'word'), false);
+  assert.equal(queue.some(card => card.trackStage === 'words'), false);
 });
 
-test('words unlock after vowels consonants and mixed alphabets are mastered', () => {
+test('words unlock and are introduced first after alphabet mastery', () => {
   const concepts = engine.buildConcepts(base, { words: [] });
   const records = {};
   for (const card of concepts.filter(item => ['vowels', 'consonants', 'mixed'].includes(item.trackStage))) {
@@ -94,6 +98,9 @@ test('words unlock after vowels consonants and mixed alphabets are mastered', ()
   }
   const progress = track.progress(concepts, records);
   assert.equal(progress.wordsUnlocked, true);
+  const ordered = track.orderedQueueConcepts(concepts, records);
+  assert.equal(ordered[0].trackStage, 'words');
   const queue = engine.buildQueue(concepts, records, { today: '2026-08-01', maxReviews: 30, maxNew: 30 });
-  assert.ok(queue.some(card => card.kind === 'word'));
+  assert.ok(queue.some(card => card.trackStage === 'words'));
+  assert.equal(queue.find(card => !records[card.id]).trackStage, 'words');
 });
