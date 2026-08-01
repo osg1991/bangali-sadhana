@@ -20,6 +20,16 @@
     return String(value || '').normalize('NFC').trim();
   }
 
+  function localIso(date = new Date()) {
+    const local = new Date(date.getTime() - date.getTimezoneOffset() * 60000);
+    return local.toISOString().slice(0, 10);
+  }
+
+  function dueDate(record) {
+    const value = normalise(record?.due).slice(0, 10);
+    return value || '9999-12-31';
+  }
+
   function classifyScript(card) {
     const group = normalise(card.group).toLowerCase();
     const bengali = normalise(card.bengali);
@@ -124,17 +134,36 @@
     return [...words, ...advanced, ...foundation];
   }
 
+  function buildTrackedQueue(concepts, records = {}, options = {}) {
+    const today = options.today || localIso();
+    const maxReviews = options.maxReviews ?? 20;
+    const maxNew = options.maxNew ?? 5;
+    const ordered = orderedQueueConcepts(concepts, records);
+    const order = new Map(ordered.map((card, index) => [card.id, index]));
+
+    const due = ordered
+      .filter(card => records[card.id] && dueDate(records[card.id]) <= today)
+      .sort((left, right) => {
+        const dateOrder = dueDate(records[left.id]).localeCompare(dueDate(records[right.id]));
+        return dateOrder || (order.get(left.id) - order.get(right.id));
+      });
+
+    const dueIds = new Set(due.map(card => card.id));
+    const newCards = ordered
+      .filter(card => !records[card.id] && !dueIds.has(card.id))
+      .slice(0, maxNew);
+
+    return [...due, ...newCards].slice(0, maxReviews);
+  }
+
   function install(engine) {
     if (!engine || engine.__learningTrackInstalled) return engine;
     const originalBuildConcepts = engine.buildConcepts.bind(engine);
-    const originalBuildQueue = engine.buildQueue.bind(engine);
 
     engine.buildConcepts = function buildTrackedConcepts(baseContent, ramprasadContent) {
       return enrichConcepts(originalBuildConcepts(baseContent, ramprasadContent));
     };
-    engine.buildQueue = function buildTrackedQueue(concepts, records, options) {
-      return originalBuildQueue(orderedQueueConcepts(concepts, records), records, options);
-    };
+    engine.buildQueue = buildTrackedQueue;
     engine.learningProgress = progress;
     engine.learningCardMastered = cardMastered;
     engine.learningAllowedConcepts = allowedConcepts;
@@ -154,6 +183,7 @@
     progress,
     allowedConcepts,
     orderedQueueConcepts,
+    buildTrackedQueue,
     install
   };
 });
