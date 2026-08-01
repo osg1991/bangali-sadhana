@@ -30,8 +30,8 @@
 
   function stageForConcept(card) {
     if (card.trackStage) return card.trackStage;
-    if (card.kind === 'word') return STAGES.words;
-    if (card.kind === 'script') return classifyScript(card);
+    if (card.kind === 'word' || normalise(card.id).startsWith('word:')) return STAGES.words;
+    if (card.kind === 'script' || normalise(card.id).startsWith('script:')) return classifyScript(card);
     return STAGES.advanced;
   }
 
@@ -113,6 +113,17 @@
     return concepts.filter(card => allowedStages.has(card.trackStage));
   }
 
+  function orderedQueueConcepts(concepts, records = {}) {
+    const allowed = allowedConcepts(concepts, records);
+    const current = progress(concepts, records);
+    if (!current.wordsUnlocked) return allowed;
+
+    const words = allowed.filter(card => card.trackStage === STAGES.words);
+    const advanced = allowed.filter(card => card.trackStage === STAGES.advanced);
+    const foundation = allowed.filter(card => REQUIRED_STAGES.includes(card.trackStage));
+    return [...words, ...advanced, ...foundation];
+  }
+
   function install(engine) {
     if (!engine || engine.__learningTrackInstalled) return engine;
     const originalBuildConcepts = engine.buildConcepts.bind(engine);
@@ -122,14 +133,27 @@
       return enrichConcepts(originalBuildConcepts(baseContent, ramprasadContent));
     };
     engine.buildQueue = function buildTrackedQueue(concepts, records, options) {
-      return originalBuildQueue(allowedConcepts(concepts, records), records, options);
+      return originalBuildQueue(orderedQueueConcepts(concepts, records), records, options);
     };
     engine.learningProgress = progress;
     engine.learningCardMastered = cardMastered;
     engine.learningAllowedConcepts = allowedConcepts;
+    engine.learningOrderedConcepts = orderedQueueConcepts;
     engine.__learningTrackInstalled = true;
     return engine;
   }
 
-  return { STAGES, REQUIRED_STAGES, classifyScript, stageForConcept, enrichConcepts, cardMastered, stageStats, progress, allowedConcepts, install };
+  return {
+    STAGES,
+    REQUIRED_STAGES,
+    classifyScript,
+    stageForConcept,
+    enrichConcepts,
+    cardMastered,
+    stageStats,
+    progress,
+    allowedConcepts,
+    orderedQueueConcepts,
+    install
+  };
 });
