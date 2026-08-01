@@ -38,7 +38,7 @@ test('concepts are ordered into vowels, consonants, mixed, words and advanced sc
   assert.deepEqual(concepts.map(card => card.trackStage), [
     'vowels', 'vowels', 'consonants', 'consonants',
     'mixed', 'mixed', 'mixed', 'mixed',
-    'words', 'words', 'advanced'
+    'words', 'advanced'
   ]);
 });
 
