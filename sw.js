@@ -1,15 +1,18 @@
-const CACHE_NAME = 'bengali-sadhana-v1.4.0';
+const CACHE_NAME = 'bengali-sadhana-v1.5.0';
 const APP_SHELL = [
   './',
   './index.html',
   './styles.css',
   './learning/srs.css',
+  './learning/track.css',
   './content/base-content.js',
   './content/complete-script.js',
   './content/generated/ramprasad-content.js',
   './learning/srs-engine.js',
+  './learning/track-engine.js',
   './learning/srs-app.js',
   './app.js',
+  './learning/track-ui.js',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png'
