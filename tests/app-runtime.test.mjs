@@ -98,7 +98,8 @@ test('application renders imported lyric words and songs', () => {
 
   navButtons.find(button => button.dataset.view === 'songs').dispatch('click');
   const songs = ids.get('app').innerHTML;
-  assert.match(songs, /5 songs imported/u);
-  assert.match(songs, /115 reviewed lyric words/u);
+  const { songCount, vocabularyCount } = context.window.RAMPRASAD_CONTENT.meta;
+  assert.ok(songs.includes(`${songCount} songs imported`));
+  assert.ok(songs.includes(`${vocabularyCount} reviewed lyric words`));
   assert.match(songs, /Show imported lyrics/u);
 });
