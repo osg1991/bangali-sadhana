@@ -1,10 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createRequire } from 'node:module';
 
-const require = createRequire(import.meta.url);
-const engine = require('../learning/srs-engine.js');
-const track = require('../learning/track-engine.js');
+await import('../learning/srs-engine.js');
+await import('../learning/track-engine.js');
+
+const engine = globalThis.BENGALI_SRS_ENGINE;
+const track = globalThis.BENGALI_LEARNING_TRACK;
+
+assert.ok(engine, 'SRS engine did not initialize on globalThis');
+assert.equal(typeof track?.install, 'function', 'Learning track API did not initialize on globalThis');
 track.install(engine);
 
 const base = {
