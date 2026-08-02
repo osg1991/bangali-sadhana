@@ -1,0 +1,30 @@
+.learning-track-panel { margin-top: 12px; border-inline-start: 4px solid var(--accent); }
+.learning-track-panel.compact { padding: 14px; }
+.track-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.track-heading h2 { margin: 8px 0 0; font-size: 1.2rem; }
+.track-active-label { flex: 0 0 auto; border: 1px solid var(--border); border-radius: 999px; padding: 6px 10px; color: var(--primary); font-size: .76rem; font-weight: 750; }
+.track-stages { display: grid; gap: 8px; margin-top: 14px; }
+.track-stage { display: grid; grid-template-columns: 34px 1fr auto; gap: 10px; align-items: center; border: 1px solid var(--border); border-radius: 14px; padding: 10px; background: var(--surface); }
+.track-stage.active { border-color: var(--primary); box-shadow: inset 3px 0 0 var(--primary); }
+.track-stage.complete { border-color: var(--success); }
+.track-stage.locked { opacity: .63; }
+.track-stage-number { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--surface-soft); color: var(--primary); font-weight: 800; }
+.track-stage-copy strong, .track-stage-copy small { display: block; }
+.track-stage-copy small { margin-top: 2px; color: var(--muted); line-height: 1.35; }
+.track-progress { height: 6px; margin-top: 7px; overflow: hidden; border-radius: 999px; background: var(--surface-soft); }
+.track-progress span { display: block; height: 100%; border-radius: inherit; background: var(--primary); }
+.track-stage.complete .track-progress span { background: var(--success); }
+.track-state { color: var(--primary); font-size: .78rem; font-weight: 800; }
+.track-lock-message { margin-top: 18px; text-align: center; border-style: dashed; }
+.track-lock-message h2 { margin: 10px 0 6px; }
+.nav-button.track-locked { opacity: .48; }
+.nav-button.track-locked::after { content: '🔒'; display: block; font-size: .6rem; line-height: 1; }
+
+@media (min-width: 680px) {
+  .track-stages { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 520px) {
+  .track-heading { flex-direction: column; }
+  .track-active-label { align-self: flex-start; }
+}

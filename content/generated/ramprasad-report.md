@@ -1,19 +1,9 @@
 # Ramprasad content sync report
 
-- Source commit: Unavailable
-- Source commit date: Unavailable
-- Parsed songs: 5
-- Mapped vocabulary entries: 115
-- Unmapped Bengali word forms: 0
+- Parsed songs: 31
+- Total distinct lyric word forms: 1122
+- Reviewed English/Tamil word meanings: 115
+- Pending word-level reviews: 1007
+- Script additions: 169
 
-## Parse failures
-
-- None
-
-## Highest-frequency unmapped forms
-
-Add reviewed meanings to `content/ramprasad-vocabulary.json`, then run the sync again.
-
-| Bengali | Count | First song | Sample line |
-|---|---:|---|---|
-
+Every pending word remains available in the vocabulary library with its translated source-line context.
