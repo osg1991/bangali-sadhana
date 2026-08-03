@@ -1,0 +1,20 @@
+.curriculum-hero .primary-button { margin-top: 0.8rem; }
+.curriculum-lock { max-width: 46rem; margin: 1rem auto; text-align: center; }
+.curriculum-table-wrap { overflow-x: auto; background: var(--card, #fff); border-radius: 1rem; box-shadow: var(--shadow, 0 8px 30px rgba(0,0,0,.08)); }
+.curriculum-table { width: 100%; border-collapse: collapse; min-width: 44rem; }
+.curriculum-table th, .curriculum-table td { padding: 0.8rem 0.9rem; text-align: left; border-bottom: 1px solid rgba(80, 50, 40, 0.12); vertical-align: top; }
+.curriculum-table th { position: sticky; top: 0; background: #fff8f1; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.curriculum-table tbody tr:last-child td { border-bottom: 0; }
+.curriculum-subsection { margin-bottom: 1.5rem; }
+.curriculum-subsection > h3 { margin: 0 0 0.7rem; }
+.curriculum-expression .card-top { align-items: flex-start; }
+.curriculum-dialogue { padding: 1.1rem; }
+.dialogue-turns { display: grid; gap: 0.8rem; margin-top: 1rem; }
+.dialogue-turn { display: grid; grid-template-columns: 2.2rem 1fr; gap: 0.7rem; padding: 0.8rem; border-radius: 0.8rem; background: rgba(123, 31, 50, 0.05); }
+.dialogue-speaker { width: 2.2rem; height: 2.2rem; display: grid; place-items: center; border-radius: 999px; background: #7b1f32; color: white; font-weight: 700; }
+.dialogue-turn p { margin: 0.18rem 0; }
+@media (max-width: 720px) {
+  .curriculum-table { min-width: 38rem; }
+  .bottom-nav { overflow-x: auto; justify-content: flex-start; }
+  .bottom-nav .nav-button { min-width: 4.8rem; flex: 0 0 auto; }
+}
