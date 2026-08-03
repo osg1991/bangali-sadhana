@@ -1,4 +1,4 @@
-name: Sync Ramprasad content
+name: Sync generated learning content
 
 on:
   workflow_dispatch:
@@ -8,8 +8,10 @@ on:
     branches:
       - main
     paths:
-      - scripts/sync-ramprasad-v13.mjs
+      - scripts/**
       - content/ramprasad-vocabulary.json
+      - content/curriculum/**
+      - learning/curriculum-*
       - tests/**
       - package.json
       - package-lock.json
@@ -19,6 +21,8 @@ on:
     paths:
       - scripts/**
       - content/ramprasad-vocabulary.json
+      - content/curriculum/**
+      - learning/curriculum-*
       - tests/**
       - package.json
       - package-lock.json
@@ -32,7 +36,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: sync-ramprasad-${{ github.event.pull_request.number || github.ref }}
+  group: sync-learning-content-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -70,6 +74,10 @@ jobs:
         working-directory: app
         run: npm run sync:ramprasad -- --source ../RamprasadSen
 
+      - name: Generate weekly topic curriculum
+        working-directory: app
+        run: npm run sync:curriculum
+
       - name: Run tests
         working-directory: app
         run: npm test
@@ -84,7 +92,7 @@ jobs:
         env:
           TARGET_BRANCH: ${{ github.event.pull_request.head.ref || github.ref_name }}
         run: |
-          if git diff --quiet -- content/generated; then
+          if [[ -z "$(git status --porcelain -- content/generated)" ]]; then
             echo "No generated content changes."
             exit 0
           fi
@@ -92,5 +100,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add content/generated
-          git commit -m "chore: sync complete Ramprasad content"
+          git commit -m "chore: sync generated learning content"
           git push origin "HEAD:${TARGET_BRANCH}"

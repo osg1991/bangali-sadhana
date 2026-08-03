@@ -1,13 +1,14 @@
 {
   "name": "bengali-sadhana",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "private": true,
   "type": "module",
-  "description": "Offline-first Bengali learning PWA with a gated alphabet-first track, Ramprasad Sen vocabulary and spaced-repetition review.",
+  "description": "Offline-first Bengali learning PWA with a gated alphabet-first track, weekly topic curriculum, Ramprasad Sen vocabulary and spaced-repetition review.",
   "scripts": {
     "sync:ramprasad": "node scripts/sync-ramprasad-v13.mjs",
-    "sync:all": "npm run sync:ramprasad",
-    "build": "npm run sync:ramprasad && npm run validate",
+    "sync:curriculum": "node scripts/sync-curriculum.mjs",
+    "sync:all": "npm run sync:ramprasad && npm run sync:curriculum",
+    "build": "npm run sync:all && npm run validate",
     "test": "node --test",
     "validate": "node scripts/validate-app.mjs"
   },
