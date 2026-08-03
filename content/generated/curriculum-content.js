@@ -1,0 +1,753 @@
+window.BENGALI_CURRICULUM = {
+  "generatedAt": "2026-08-03T02:07:31.115Z",
+  "unitCount": 1,
+  "units": [
+    {
+      "id": "a1-week-20-common-adjectives",
+      "level": "A1",
+      "week": 20,
+      "sequence": 20,
+      "topic": "Common Adjectives",
+      "status": "reviewed",
+      "source": "User-supplied Glossika learning email",
+      "prerequisite": "foundation-mixed-alphabets",
+      "sourceFile": "content/curriculum/a1/week-20-common-adjectives.md",
+      "functionalLanguage": [
+        {
+          "id": "congratulate-standard-01",
+          "type": "functional-language",
+          "function": "Congratulating",
+          "functionId": "congratulating",
+          "register": "standard",
+          "bengali": "অভিনন্দন!",
+          "roman": "obhinndon!",
+          "literalGloss": "congratulations",
+          "english": "Congratulations!",
+          "tamil": "வாழ்த்துகள்!"
+        },
+        {
+          "id": "congratulate-standard-02",
+          "type": "functional-language",
+          "function": "Congratulating",
+          "functionId": "congratulating",
+          "register": "standard",
+          "bengali": "খুব ভালো হয়েছে।",
+          "roman": "khub bhalō hoẏeche.",
+          "literalGloss": "very good has-happened",
+          "english": "Well done.",
+          "tamil": "மிகவும் நன்றாகச் செய்திருக்கிறீர்கள்."
+        },
+        {
+          "id": "congratulate-casual-01",
+          "type": "functional-language",
+          "function": "Congratulating",
+          "functionId": "congratulating",
+          "register": "casual",
+          "bengali": "বাহ, দারুণ!",
+          "roman": "bah, darun!",
+          "literalGloss": "wow great",
+          "english": "Wow, great!",
+          "tamil": "ஆஹா, அருமை!"
+        },
+        {
+          "id": "start-conversation-standard-01",
+          "type": "functional-language",
+          "function": "Starting a conversation",
+          "functionId": "starting-a-conversation",
+          "register": "standard",
+          "bengali": "শুনুন, একটা কথা ছিল।",
+          "roman": "śunun, ekṭa kotha chil.",
+          "literalGloss": "listen polite one word was",
+          "english": "Excuse me, I had something to say.",
+          "tamil": "கேளுங்கள், ஒரு விஷயம் சொல்ல வேண்டும்."
+        },
+        {
+          "id": "start-conversation-casual-01",
+          "type": "functional-language",
+          "function": "Starting a conversation",
+          "functionId": "starting-a-conversation",
+          "register": "casual",
+          "bengali": "এই যে, শোন।",
+          "roman": "ei je, śōn.",
+          "literalGloss": "hey listen",
+          "english": "Hey, listen.",
+          "tamil": "ஏய், கேள்."
+        },
+        {
+          "id": "start-conversation-standard-02",
+          "type": "functional-language",
+          "function": "Starting a conversation",
+          "functionId": "starting-a-conversation",
+          "register": "standard",
+          "bengali": "একটু সময় হবে?",
+          "roman": "ekṭu śomoẏ hobe?",
+          "literalGloss": "a-little time will-be",
+          "english": "Do you have a moment?",
+          "tamil": "கொஞ்சம் நேரம் கிடைக்குமா?"
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "adjective-mondo",
+          "type": "vocabulary",
+          "bengali": "মন্দ",
+          "roman": "mondo",
+          "english": "bad",
+          "tamil": "கெட்ட",
+          "partOfSpeech": "adjective",
+          "oppositeId": ""
+        },
+        {
+          "id": "adjective-uncu",
+          "type": "vocabulary",
+          "bengali": "উঁচু",
+          "roman": "ũcu",
+          "english": "high",
+          "tamil": "உயரமான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-nicu"
+        },
+        {
+          "id": "adjective-nicu",
+          "type": "vocabulary",
+          "bengali": "নিচু",
+          "roman": "nicu",
+          "english": "low",
+          "tamil": "தாழ்ந்த",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-uncu"
+        },
+        {
+          "id": "adjective-bheja",
+          "type": "vocabulary",
+          "bengali": "ভেজা",
+          "roman": "bheja",
+          "english": "wet",
+          "tamil": "ஈரமான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-sukono"
+        },
+        {
+          "id": "adjective-sukono",
+          "type": "vocabulary",
+          "bengali": "শুকনো",
+          "roman": "śukonō",
+          "english": "dry",
+          "tamil": "உலர்ந்த",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-bheja"
+        },
+        {
+          "id": "adjective-norom",
+          "type": "vocabulary",
+          "bengali": "নরম",
+          "roman": "norom",
+          "english": "soft",
+          "tamil": "மென்மையான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-sokto"
+        },
+        {
+          "id": "adjective-sokto",
+          "type": "vocabulary",
+          "bengali": "শক্ত",
+          "roman": "śokto",
+          "english": "hard",
+          "tamil": "கடினமான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-norom"
+        },
+        {
+          "id": "adjective-sohoj",
+          "type": "vocabulary",
+          "bengali": "সহজ",
+          "roman": "śohoj",
+          "english": "easy",
+          "tamil": "எளிதான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-kothin"
+        },
+        {
+          "id": "adjective-kothin",
+          "type": "vocabulary",
+          "bengali": "কঠিন",
+          "roman": "koṭhin",
+          "english": "difficult",
+          "tamil": "கடினமான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-sohoj"
+        },
+        {
+          "id": "adjective-taja",
+          "type": "vocabulary",
+          "bengali": "তাজা",
+          "roman": "taja",
+          "english": "fresh",
+          "tamil": "புதிய / பசுமையான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-basi"
+        },
+        {
+          "id": "adjective-basi",
+          "type": "vocabulary",
+          "bengali": "বাসি",
+          "roman": "baśi",
+          "english": "stale",
+          "tamil": "பழைய / கெட்டுப்போன",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-taja"
+        },
+        {
+          "id": "adjective-teto",
+          "type": "vocabulary",
+          "bengali": "তেতো",
+          "roman": "tetō",
+          "english": "bitter",
+          "tamil": "கசப்பான",
+          "partOfSpeech": "adjective",
+          "oppositeId": ""
+        },
+        {
+          "id": "adjective-drut",
+          "type": "vocabulary",
+          "bengali": "দ্রুত",
+          "roman": "drut",
+          "english": "fast",
+          "tamil": "வேகமான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-dhir"
+        },
+        {
+          "id": "adjective-dhir",
+          "type": "vocabulary",
+          "bengali": "ধীর",
+          "roman": "dhir",
+          "english": "slow",
+          "tamil": "மெதுவான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-drut"
+        },
+        {
+          "id": "adjective-khali",
+          "type": "vocabulary",
+          "bengali": "খালি",
+          "roman": "khali",
+          "english": "empty",
+          "tamil": "காலியான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-bhora"
+        },
+        {
+          "id": "adjective-bhora",
+          "type": "vocabulary",
+          "bengali": "ভরা",
+          "roman": "bhora",
+          "english": "full",
+          "tamil": "நிறைந்த",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-khali"
+        },
+        {
+          "id": "adjective-coora",
+          "type": "vocabulary",
+          "bengali": "চওড়া",
+          "roman": "coōṛa",
+          "english": "wide",
+          "tamil": "அகலமான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-soru"
+        },
+        {
+          "id": "adjective-soru",
+          "type": "vocabulary",
+          "bengali": "সরু",
+          "roman": "śoru",
+          "english": "narrow",
+          "tamil": "குறுகிய",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-coora"
+        },
+        {
+          "id": "adjective-gobhir",
+          "type": "vocabulary",
+          "bengali": "গভীর",
+          "roman": "gobhir",
+          "english": "deep",
+          "tamil": "ஆழமான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-ogobhir"
+        },
+        {
+          "id": "adjective-ogobhir",
+          "type": "vocabulary",
+          "bengali": "অগভীর",
+          "roman": "ogobhir",
+          "english": "shallow",
+          "tamil": "ஆழமற்ற",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-gobhir"
+        },
+        {
+          "id": "adjective-dhoni",
+          "type": "vocabulary",
+          "bengali": "ধনী",
+          "roman": "dhoni",
+          "english": "rich",
+          "tamil": "பணக்கார",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-gorib"
+        },
+        {
+          "id": "adjective-gorib",
+          "type": "vocabulary",
+          "bengali": "গরিব",
+          "roman": "goribo",
+          "english": "poor",
+          "tamil": "ஏழை",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-dhoni"
+        },
+        {
+          "id": "adjective-soktisali",
+          "type": "vocabulary",
+          "bengali": "শক্তিশালী",
+          "roman": "śoktiśali",
+          "english": "strong",
+          "tamil": "வலிமையான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-durbol"
+        },
+        {
+          "id": "adjective-durbol",
+          "type": "vocabulary",
+          "bengali": "দুর্বল",
+          "roman": "durbol",
+          "english": "weak",
+          "tamil": "பலவீனமான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-soktisali"
+        },
+        {
+          "id": "adjective-sothik",
+          "type": "vocabulary",
+          "bengali": "সঠিক",
+          "roman": "śoṭhik",
+          "english": "correct",
+          "tamil": "சரியான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-bhul"
+        },
+        {
+          "id": "adjective-bhul",
+          "type": "vocabulary",
+          "bengali": "ভুল",
+          "roman": "bhul",
+          "english": "wrong",
+          "tamil": "தவறான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-sothik"
+        },
+        {
+          "id": "adjective-mojar",
+          "type": "vocabulary",
+          "bengali": "মজার",
+          "roman": "mojar",
+          "english": "funny / tasty",
+          "tamil": "சுவாரஸ்யமான / சுவையான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-biroktikor"
+        },
+        {
+          "id": "adjective-biroktikor",
+          "type": "vocabulary",
+          "bengali": "বিরক্তিকর",
+          "roman": "biroktikor",
+          "english": "boring",
+          "tamil": "சலிப்பூட்டும்",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-mojar"
+        },
+        {
+          "id": "adjective-soccho",
+          "type": "vocabulary",
+          "bengali": "স্বচ্ছ",
+          "roman": "śoccho",
+          "english": "transparent / clear",
+          "tamil": "வெளிப்படையான / தெளிவான",
+          "partOfSpeech": "adjective",
+          "oppositeId": ""
+        },
+        {
+          "id": "adjective-jhokjhoke",
+          "type": "vocabulary",
+          "bengali": "ঝকঝকে",
+          "roman": "jhokjhoke",
+          "english": "sparkling",
+          "tamil": "பளபளப்பான",
+          "partOfSpeech": "adjective",
+          "oppositeId": ""
+        },
+        {
+          "id": "adjective-gologal",
+          "type": "vocabulary",
+          "bengali": "গোলগাল",
+          "roman": "gōlogal",
+          "english": "plump / round",
+          "tamil": "குண்டான / உருண்டையான",
+          "partOfSpeech": "adjective",
+          "oppositeId": ""
+        },
+        {
+          "id": "adjective-sussadu",
+          "type": "vocabulary",
+          "bengali": "সুস্বাদু",
+          "roman": "śuśśadu",
+          "english": "delicious",
+          "tamil": "மிகச் சுவையான",
+          "partOfSpeech": "adjective",
+          "oppositeId": ""
+        },
+        {
+          "id": "adjective-komol",
+          "type": "vocabulary",
+          "bengali": "কোমল",
+          "roman": "kōmol",
+          "english": "tender / gentle",
+          "tamil": "மிருதுவான / மென்மையான",
+          "partOfSpeech": "adjective",
+          "oppositeId": ""
+        },
+        {
+          "id": "adjective-puru",
+          "type": "vocabulary",
+          "bengali": "পুরু",
+          "roman": "puru",
+          "english": "thick",
+          "tamil": "தடிமனான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-cikon"
+        },
+        {
+          "id": "adjective-cikon",
+          "type": "vocabulary",
+          "bengali": "চিকন",
+          "roman": "cikon",
+          "english": "thin / slim",
+          "tamil": "மெல்லிய / மெலிந்த",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-puru"
+        },
+        {
+          "id": "adjective-khara",
+          "type": "vocabulary",
+          "bengali": "খাড়া",
+          "roman": "khaṛa",
+          "english": "steep / upright",
+          "tamil": "செங்குத்தான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-dhalu"
+        },
+        {
+          "id": "adjective-dhalu",
+          "type": "vocabulary",
+          "bengali": "ঢালু",
+          "roman": "ḍhalu",
+          "english": "sloping",
+          "tamil": "சாய்வான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-khara"
+        },
+        {
+          "id": "adjective-aloga",
+          "type": "vocabulary",
+          "bengali": "আলগা",
+          "roman": "aloga",
+          "english": "loose",
+          "tamil": "தளர்வான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-atosat"
+        },
+        {
+          "id": "adjective-atosat",
+          "type": "vocabulary",
+          "bengali": "আঁটসাঁট",
+          "roman": "ãṭośãṭ",
+          "english": "tight",
+          "tamil": "இறுக்கமான",
+          "partOfSpeech": "adjective",
+          "oppositeId": "adjective-aloga"
+        },
+        {
+          "id": "adjective-bhongur",
+          "type": "vocabulary",
+          "bengali": "ভঙ্গুর",
+          "roman": "bhoṅgur",
+          "english": "fragile",
+          "tamil": "எளிதில் உடையும்",
+          "partOfSpeech": "adjective",
+          "oppositeId": ""
+        }
+      ],
+      "numbers": [
+        {
+          "id": "number-10-billion",
+          "type": "number",
+          "bengali": "এক হাজার কোটি",
+          "roman": "ek hajar kōṭi",
+          "numericValue": 10000000000,
+          "english": "10 billion",
+          "tamil": "ஆயிரம் கோடி"
+        },
+        {
+          "id": "number-20-billion",
+          "type": "number",
+          "bengali": "দুই হাজার কোটি",
+          "roman": "dui hajar kōṭi",
+          "numericValue": 20000000000,
+          "english": "20 billion",
+          "tamil": "இரண்டாயிரம் கோடி"
+        },
+        {
+          "id": "number-30-billion",
+          "type": "number",
+          "bengali": "তিন হাজার কোটি",
+          "roman": "tin hajar kōṭi",
+          "numericValue": 30000000000,
+          "english": "30 billion",
+          "tamil": "மூவாயிரம் கோடி"
+        },
+        {
+          "id": "number-40-billion",
+          "type": "number",
+          "bengali": "চার হাজার কোটি",
+          "roman": "car hajar kōṭi",
+          "numericValue": 40000000000,
+          "english": "40 billion",
+          "tamil": "நான்காயிரம் கோடி"
+        },
+        {
+          "id": "number-50-billion",
+          "type": "number",
+          "bengali": "পাঁচ হাজার কোটি",
+          "roman": "pãc hajar kōṭi",
+          "numericValue": 50000000000,
+          "english": "50 billion",
+          "tamil": "ஐந்தாயிரம் கோடி"
+        },
+        {
+          "id": "number-60-billion",
+          "type": "number",
+          "bengali": "ছয় হাজার কোটি",
+          "roman": "choẏ hajar kōṭi",
+          "numericValue": 60000000000,
+          "english": "60 billion",
+          "tamil": "ஆறாயிரம் கோடி"
+        },
+        {
+          "id": "number-70-billion",
+          "type": "number",
+          "bengali": "সাত হাজার কোটি",
+          "roman": "śat hajar kōṭi",
+          "numericValue": 70000000000,
+          "english": "70 billion",
+          "tamil": "ஏழாயிரம் கோடி"
+        },
+        {
+          "id": "number-80-billion",
+          "type": "number",
+          "bengali": "আট হাজার কোটি",
+          "roman": "aṭ hajar kōṭi",
+          "numericValue": 80000000000,
+          "english": "80 billion",
+          "tamil": "எட்டாயிரம் கோடி"
+        },
+        {
+          "id": "number-90-billion",
+          "type": "number",
+          "bengali": "নয় হাজার কোটি",
+          "roman": "noẏ hajar kōṭi",
+          "numericValue": 90000000000,
+          "english": "90 billion",
+          "tamil": "ஒன்பதாயிரம் கோடி"
+        },
+        {
+          "id": "number-100-billion",
+          "type": "number",
+          "bengali": "দশ হাজার কোটি",
+          "roman": "doś hajar kōṭi",
+          "numericValue": 100000000000,
+          "english": "100 billion",
+          "tamil": "பத்தாயிரம் கோடி"
+        }
+      ],
+      "situationPatterns": [
+        {
+          "id": "pattern-food-tasty",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "এই খাবার খুব মজার।",
+          "roman": "ei khabar khub mojar.",
+          "literalGloss": "this food very tasty",
+          "english": "This food is very tasty.",
+          "tamil": "இந்த உணவு மிகவும் சுவையாக இருக்கிறது."
+        },
+        {
+          "id": "pattern-road-wide",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "রাস্তাটা চওড়া।",
+          "roman": "rastaṭa cōṛa.",
+          "literalGloss": "road-the wide",
+          "english": "The road is wide.",
+          "tamil": "அந்தச் சாலை அகலமாக இருக்கிறது."
+        },
+        {
+          "id": "pattern-maths-difficult",
+          "type": "situation-pattern",
+          "register": "casual",
+          "bengali": "অঙ্কটা কঠিন।",
+          "roman": "oṅkṭa koṭhin.",
+          "literalGloss": "arithmetic-the difficult",
+          "english": "The maths problem is hard.",
+          "tamil": "கணக்குப் பிரச்சினை கடினமாக இருக்கிறது."
+        },
+        {
+          "id": "pattern-river-deep",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "নদীটা খুব গভীর।",
+          "roman": "nodiṭa khub gobhir.",
+          "literalGloss": "river-the very deep",
+          "english": "The river is very deep.",
+          "tamil": "அந்த நதி மிகவும் ஆழமாக இருக்கிறது."
+        },
+        {
+          "id": "pattern-answer-correct",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "তোমার উত্তরটা সঠিক।",
+          "roman": "tōmar uttorṭa śoṭhik.",
+          "literalGloss": "your answer-the correct",
+          "english": "Your answer is correct.",
+          "tamil": "உன் பதில் சரியாக இருக்கிறது."
+        },
+        {
+          "id": "pattern-weather-damp",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "বাইরে আবহাওয়া স্যাঁতসেঁতে।",
+          "roman": "baire abohaōẇa sễtośẽte.",
+          "literalGloss": "outside weather damp",
+          "english": "The weather outside is damp.",
+          "tamil": "வெளியே வானிலை ஈரப்பதமாக இருக்கிறது."
+        },
+        {
+          "id": "pattern-shoe-tight",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "জুতোটা একটু আঁটসাঁট।",
+          "roman": "jutōṭa ekṭu ãṭośãṭ.",
+          "literalGloss": "shoe-the a-little tight",
+          "english": "The shoe is a bit tight.",
+          "tamil": "காலணி கொஞ்சம் இறுக்கமாக இருக்கிறது."
+        },
+        {
+          "id": "pattern-road-steep",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "রাস্তাটা খুব খাড়া।",
+          "roman": "rastaṭa khub khaṛa.",
+          "literalGloss": "road-the very steep",
+          "english": "The road is very steep.",
+          "tamil": "அந்தச் சாலை மிகவும் செங்குத்தாக இருக்கிறது."
+        },
+        {
+          "id": "pattern-glass-fragile",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "এই কাচটা ভঙ্গুর।",
+          "roman": "ei kacṭa bhoṅgur.",
+          "literalGloss": "this glass-the fragile",
+          "english": "This glass is fragile.",
+          "tamil": "இந்தக் கண்ணாடி எளிதில் உடையும்."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "a1-week-20-common-adjectives-dialogue-1",
+          "type": "mini-dialogue",
+          "title": "Dialogue 1 — Discussing a story",
+          "turns": [
+            {
+              "turn": 1,
+              "speaker": "A",
+              "register": "standard",
+              "bengali": "এই গল্পটা কেমন?",
+              "roman": "ei golpṭa kemon?",
+              "literalGloss": "this story-the how",
+              "english": "How is this story?",
+              "tamil": "இந்தக் கதை எப்படி இருக்கிறது?"
+            },
+            {
+              "turn": 2,
+              "speaker": "B",
+              "register": "standard",
+              "bengali": "মজার, কিন্তু একটু কঠিন।",
+              "roman": "mojar, kintu ekṭu koṭhin.",
+              "literalGloss": "funny but a-little difficult",
+              "english": "Funny, but a bit hard.",
+              "tamil": "சுவாரஸ்யமாக இருக்கிறது, ஆனால் கொஞ்சம் கடினம்."
+            },
+            {
+              "turn": 3,
+              "speaker": "A",
+              "register": "standard",
+              "bengali": "শেষটা কেমন?",
+              "roman": "śeśṭa kemon?",
+              "literalGloss": "ending-the how",
+              "english": "How is the ending?",
+              "tamil": "முடிவு எப்படி இருக்கிறது?"
+            },
+            {
+              "turn": 4,
+              "speaker": "B",
+              "register": "casual",
+              "bengali": "দারুণ, পড়ে নাও।",
+              "roman": "darun, poṛe naō.",
+              "literalGloss": "great reading take",
+              "english": "Great, go ahead and read it.",
+              "tamil": "அருமை, படித்துப் பார்."
+            }
+          ]
+        },
+        {
+          "id": "a1-week-20-common-adjectives-dialogue-2",
+          "type": "mini-dialogue",
+          "title": "Dialogue 2 — Asking about tea",
+          "turns": [
+            {
+              "turn": 1,
+              "speaker": "A",
+              "register": "standard",
+              "bengali": "চা কেমন হয়েছে?",
+              "roman": "ca kemon hoẏeche?",
+              "literalGloss": "tea how has-become",
+              "english": "How is the tea?",
+              "tamil": "தேநீர் எப்படி இருக்கிறது?"
+            },
+            {
+              "turn": 2,
+              "speaker": "B",
+              "register": "standard",
+              "bengali": "গরম গরম আর মিষ্টি।",
+              "roman": "gorom gorom ar miśṭi.",
+              "literalGloss": "piping-hot and sweet",
+              "english": "Hot and sweet.",
+              "tamil": "சூடாகவும் இனிப்பாகவும் இருக்கிறது."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
