@@ -44,16 +44,9 @@ export function parseTables(body) {
   for (let index = 0; index < lines.length; index += 1) {
     const line = lines[index];
     const h2 = line.match(/^##\s+(.+?)\s*$/u);
-    if (h2) {
-      section = h2[1].trim();
-      group = '';
-      continue;
-    }
+    if (h2) { section = h2[1].trim(); group = ''; continue; }
     const h3 = line.match(/^###\s+(.+?)\s*$/u);
-    if (h3) {
-      group = h3[1].trim();
-      continue;
-    }
+    if (h3) { group = h3[1].trim(); continue; }
     if (!line.trim().startsWith('|') || index + 1 >= lines.length || !isSeparator(lines[index + 1])) continue;
 
     const headers = splitTableRow(line);
@@ -73,11 +66,7 @@ export function parseTables(body) {
 }
 
 function slug(value) {
-  return String(value || '')
-    .normalize('NFKD')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/gu, '-')
-    .replace(/^-+|-+$/gu, '');
+  return String(value || '').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]+/gu, '-').replace(/^-+|-+$/gu, '');
 }
 
 function required(row, column, context) {
@@ -93,29 +82,19 @@ function optional(row, column) {
 function mapFunctional(table, unitId) {
   const functionId = slug(table.group);
   return table.rows.map((row, index) => ({
-    id: required(row, 'ID', `${unitId} functional row ${index + 1}`),
-    type: 'functional-language',
-    function: table.group,
-    functionId,
+    id: required(row, 'ID', `${unitId} functional row ${index + 1}`), type: 'functional-language', function: table.group, functionId,
     register: required(row, 'Register', `${unitId} functional row ${index + 1}`).toLowerCase(),
-    bengali: required(row, 'Bengali', `${unitId} functional row ${index + 1}`),
-    roman: required(row, 'Romanization', `${unitId} functional row ${index + 1}`),
-    literalGloss: optional(row, 'Literal gloss'),
-    english: required(row, 'English', `${unitId} functional row ${index + 1}`),
-    tamil: optional(row, 'Tamil')
+    bengali: required(row, 'Bengali', `${unitId} functional row ${index + 1}`), roman: required(row, 'Romanization', `${unitId} functional row ${index + 1}`),
+    literalGloss: optional(row, 'Literal gloss'), english: required(row, 'English', `${unitId} functional row ${index + 1}`), tamil: optional(row, 'Tamil')
   }));
 }
 
 function mapVocabulary(table, unitId) {
   return table.rows.map((row, index) => ({
-    id: required(row, 'ID', `${unitId} vocabulary row ${index + 1}`),
-    type: 'vocabulary',
-    bengali: required(row, 'Bengali', `${unitId} vocabulary row ${index + 1}`),
-    roman: required(row, 'Romanization', `${unitId} vocabulary row ${index + 1}`),
-    english: required(row, 'English', `${unitId} vocabulary row ${index + 1}`),
-    tamil: optional(row, 'Tamil'),
-    partOfSpeech: optional(row, 'Part of speech') || 'word',
-    oppositeId: optional(row, 'Opposite ID')
+    id: required(row, 'ID', `${unitId} vocabulary row ${index + 1}`), type: 'vocabulary',
+    bengali: required(row, 'Bengali', `${unitId} vocabulary row ${index + 1}`), roman: required(row, 'Romanization', `${unitId} vocabulary row ${index + 1}`),
+    english: required(row, 'English', `${unitId} vocabulary row ${index + 1}`), tamil: optional(row, 'Tamil'),
+    partOfSpeech: optional(row, 'Part of speech') || 'word', oppositeId: optional(row, 'Opposite ID')
   }));
 }
 
@@ -125,45 +104,31 @@ function mapNumbers(table, unitId) {
     const numericValue = Number(rawValue);
     if (!Number.isFinite(numericValue)) throw new Error(`${unitId} number row ${index + 1}: invalid Numeric value ${rawValue}`);
     return {
-      id: required(row, 'ID', `${unitId} number row ${index + 1}`),
-      type: 'number',
-      bengali: required(row, 'Bengali', `${unitId} number row ${index + 1}`),
-      roman: required(row, 'Romanization', `${unitId} number row ${index + 1}`),
-      numericValue,
-      english: required(row, 'English', `${unitId} number row ${index + 1}`),
-      tamil: optional(row, 'Tamil')
+      id: required(row, 'ID', `${unitId} number row ${index + 1}`), type: 'number',
+      bengali: required(row, 'Bengali', `${unitId} number row ${index + 1}`), roman: required(row, 'Romanization', `${unitId} number row ${index + 1}`), numericValue,
+      english: required(row, 'English', `${unitId} number row ${index + 1}`), tamil: optional(row, 'Tamil')
     };
   });
 }
 
 function mapPatterns(table, unitId) {
   return table.rows.map((row, index) => ({
-    id: required(row, 'ID', `${unitId} pattern row ${index + 1}`),
-    type: 'situation-pattern',
+    id: required(row, 'ID', `${unitId} pattern row ${index + 1}`), type: 'situation-pattern',
     register: required(row, 'Register', `${unitId} pattern row ${index + 1}`).toLowerCase(),
-    bengali: required(row, 'Bengali', `${unitId} pattern row ${index + 1}`),
-    roman: required(row, 'Romanization', `${unitId} pattern row ${index + 1}`),
-    literalGloss: optional(row, 'Literal gloss'),
-    english: required(row, 'English', `${unitId} pattern row ${index + 1}`),
-    tamil: optional(row, 'Tamil')
+    bengali: required(row, 'Bengali', `${unitId} pattern row ${index + 1}`), roman: required(row, 'Romanization', `${unitId} pattern row ${index + 1}`),
+    literalGloss: optional(row, 'Literal gloss'), english: required(row, 'English', `${unitId} pattern row ${index + 1}`), tamil: optional(row, 'Tamil')
   }));
 }
 
 function mapDialogue(table, unitId, dialogueIndex) {
   const id = `${unitId}-dialogue-${dialogueIndex + 1}`;
   return {
-    id,
-    type: 'mini-dialogue',
-    title: table.group || `Dialogue ${dialogueIndex + 1}`,
+    id, type: 'mini-dialogue', title: table.group || `Dialogue ${dialogueIndex + 1}`,
     turns: table.rows.map((row, index) => ({
-      turn: Number(optional(row, 'Turn') || index + 1),
-      speaker: required(row, 'Speaker', `${id} turn ${index + 1}`),
-      register: required(row, 'Register', `${id} turn ${index + 1}`).toLowerCase(),
-      bengali: required(row, 'Bengali', `${id} turn ${index + 1}`),
-      roman: required(row, 'Romanization', `${id} turn ${index + 1}`),
-      literalGloss: optional(row, 'Literal gloss'),
-      english: required(row, 'English', `${id} turn ${index + 1}`),
-      tamil: optional(row, 'Tamil')
+      turn: Number(optional(row, 'Turn') || index + 1), speaker: required(row, 'Speaker', `${id} turn ${index + 1}`),
+      register: required(row, 'Register', `${id} turn ${index + 1}`).toLowerCase(), bengali: required(row, 'Bengali', `${id} turn ${index + 1}`),
+      roman: required(row, 'Romanization', `${id} turn ${index + 1}`), literalGloss: optional(row, 'Literal gloss'),
+      english: required(row, 'English', `${id} turn ${index + 1}`), tamil: optional(row, 'Tamil')
     }))
   };
 }
@@ -173,22 +138,14 @@ export function parseCurriculumMarkdown(markdown, sourceFile = '') {
   for (const key of ['id', 'level', 'week', 'sequence', 'topic']) {
     if (meta[key] === undefined || meta[key] === '') throw new Error(`${sourceFile || 'curriculum'}: missing front-matter ${key}`);
   }
-
   const tables = parseTables(body);
-  const functionalLanguage = tables.filter(table => table.section === 'Functional Language').flatMap(table => mapFunctional(table, meta.id));
-  const vocabulary = tables.filter(table => table.section === 'Vocabulary').flatMap(table => mapVocabulary(table, meta.id));
-  const numbers = tables.filter(table => table.section === 'Numbers').flatMap(table => mapNumbers(table, meta.id));
-  const situationPatterns = tables.filter(table => table.section === 'Situation Patterns').flatMap(table => mapPatterns(table, meta.id));
-  const dialogues = tables.filter(table => table.section === 'Mini-Dialogues').map((table, index) => mapDialogue(table, meta.id, index));
-
   return {
-    ...meta,
-    sourceFile,
-    functionalLanguage,
-    vocabulary,
-    numbers,
-    situationPatterns,
-    dialogues
+    ...meta, sourceFile,
+    functionalLanguage: tables.filter(table => table.section === 'Functional Language').flatMap(table => mapFunctional(table, meta.id)),
+    vocabulary: tables.filter(table => table.section === 'Vocabulary').flatMap(table => mapVocabulary(table, meta.id)),
+    numbers: tables.filter(table => table.section === 'Numbers').flatMap(table => mapNumbers(table, meta.id)),
+    situationPatterns: tables.filter(table => table.section === 'Situation Patterns').flatMap(table => mapPatterns(table, meta.id)),
+    dialogues: tables.filter(table => table.section === 'Mini-Dialogues').map((table, index) => mapDialogue(table, meta.id, index))
   };
 }
 
@@ -197,11 +154,7 @@ export function validateCourse(course) {
   const warnings = [];
   const ids = new Map();
   const collect = [
-    ...course.functionalLanguage,
-    ...course.vocabulary,
-    ...course.numbers,
-    ...course.situationPatterns,
-    ...course.dialogues,
+    ...course.functionalLanguage, ...course.vocabulary, ...course.numbers, ...course.situationPatterns, ...course.dialogues,
     ...course.dialogues.flatMap(dialogue => dialogue.turns.map(turn => ({ ...turn, id: `${dialogue.id}:turn-${turn.turn}` })))
   ];
   for (const item of collect) {
@@ -232,10 +185,8 @@ async function markdownFiles(directory) {
 
 function reportFor(courses, validations) {
   const totals = courses.reduce((sum, course) => ({
-    vocabulary: sum.vocabulary + course.vocabulary.length,
-    functional: sum.functional + course.functionalLanguage.length,
-    numbers: sum.numbers + course.numbers.length,
-    patterns: sum.patterns + course.situationPatterns.length,
+    vocabulary: sum.vocabulary + course.vocabulary.length, functional: sum.functional + course.functionalLanguage.length,
+    numbers: sum.numbers + course.numbers.length, patterns: sum.patterns + course.situationPatterns.length,
     dialogues: sum.dialogues + course.dialogues.length,
     dialogueTurns: sum.dialogueTurns + course.dialogues.reduce((count, dialogue) => count + dialogue.turns.length, 0)
   }), { vocabulary: 0, functional: 0, numbers: 0, patterns: 0, dialogues: 0, dialogueTurns: 0 });
@@ -259,11 +210,7 @@ export async function syncCurriculum({ sourceRoot = curriculumRoot, outputRoot =
   }
   courses.sort((left, right) => Number(left.sequence) - Number(right.sequence));
   await fs.mkdir(outputRoot, { recursive: true });
-  const payload = {
-    generatedAt: new Date().toISOString(),
-    unitCount: courses.length,
-    units: courses
-  };
+  const payload = { schemaVersion: 1, unitCount: courses.length, units: courses };
   const json = `${JSON.stringify(payload, null, 2)}\n`;
   await fs.writeFile(path.join(outputRoot, 'curriculum-content.json'), json);
   await fs.writeFile(path.join(outputRoot, 'curriculum-content.js'), `window.BENGALI_CURRICULUM = ${json.trim()};\n`);
