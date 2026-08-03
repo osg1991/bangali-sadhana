@@ -73,6 +73,14 @@ Each dialogue gets its own level-three heading.
 
 IDs are the SRS identity. Once released, do not rename an ID merely to improve wording. Correct the Bengali, romanization or translation while preserving the ID so learner progress survives content updates.
 
+## Adding another week
+
+1. Copy the nearest existing weekly Markdown file.
+2. Change the front-matter ID, week, sequence and topic.
+3. Replace the section rows while keeping stable, descriptive IDs.
+4. Run the curriculum generator, tests and validation.
+5. Review `content/generated/curriculum-report.md` before committing.
+
 ## Build
 
 ```bash
