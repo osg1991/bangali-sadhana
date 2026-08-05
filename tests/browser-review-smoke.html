@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Review browser smoke test</title>
+  <script src="../content/base-content.js" defer></script>
+  <script src="../content/complete-script.js" defer></script>
+  <script src="../content/generated/ramprasad-content.js" defer></script>
+  <script src="../content/generated/curriculum-content.js" defer></script>
+  <script src="../learning/srs-engine.js" defer></script>
+  <script src="../learning/track-engine.js" defer></script>
+  <script src="../learning/curriculum-engine.js" defer></script>
+  <script src="../learning/srs-app.js" defer></script>
+  <script src="../app.js" defer></script>
+  <script src="../learning/track-ui.js" defer></script>
+  <script src="../learning/curriculum-app.js" defer></script>
+</head>
+<body data-review-smoke="starting">
+  <header><button id="install-button" hidden>Install</button><button id="settings-button">Aa</button></header>
+  <div id="network-status"></div><div id="streak-status"></div>
+  <main id="app" tabindex="-1"></main>
+  <nav class="bottom-nav">
+    <button data-view="today" class="nav-button active">Today</button>
+    <button data-view="review" class="nav-button">Review</button>
+    <button data-view="script" class="nav-button">Script</button>
+    <button data-view="words" class="nav-button">Words</button>
+    <button data-view="sentences" class="nav-button">Sentences</button>
+    <button data-view="songs" class="nav-button">Songs</button>
+  </nav>
+  <dialog id="settings-dialog"><form method="dialog"><input id="show-roman" type="checkbox"><input id="show-devanagari" type="checkbox"><input id="show-tamil" type="checkbox"></form></dialog>
+  <div id="toast"></div>
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.querySelector('[data-view="review"]')?.click();
+        setTimeout(() => {
+          document.querySelector('[data-srs-start]')?.click();
+          setTimeout(() => {
+            const text = document.getElementById('app')?.textContent || '';
+            document.body.dataset.reviewSmoke = text.includes('Daily review') ? 'pass' : 'failed';
+          }, 300);
+        }, 300);
+      }, 300);
+    });
+  </script>
+</body>
+</html>
