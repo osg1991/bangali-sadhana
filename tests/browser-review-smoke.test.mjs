@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
 import { readFileSync, statSync } from 'node:fs';
 import { extname, join, normalize, resolve } from 'node:path';
-import { spawnSync } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 
 const root = resolve(import.meta.dirname, '..');
 const browserCandidates = [process.env.CHROME_BIN, 'google-chrome', 'chromium', 'chromium-browser'].filter(Boolean);
@@ -14,6 +14,31 @@ function findBrowser() {
     if (result.status === 0 && result.stdout.trim()) return result.stdout.trim();
   }
   return '';
+}
+
+function runBrowser(executable, args, timeoutMs = 20000) {
+  return new Promise((resolveRun, rejectRun) => {
+    const child = spawn(executable, args, { stdio: ['ignore', 'pipe', 'pipe'] });
+    let stdout = '';
+    let stderr = '';
+    const timeout = setTimeout(() => {
+      child.kill('SIGKILL');
+      rejectRun(new Error(`Browser timed out after ${timeoutMs} ms`));
+    }, timeoutMs);
+
+    child.stdout.setEncoding('utf8');
+    child.stderr.setEncoding('utf8');
+    child.stdout.on('data', chunk => { stdout += chunk; });
+    child.stderr.on('data', chunk => { stderr += chunk; });
+    child.on('error', error => {
+      clearTimeout(timeout);
+      rejectRun(error);
+    });
+    child.on('close', code => {
+      clearTimeout(timeout);
+      resolveRun({ status: code, stdout, stderr });
+    });
+  });
 }
 
 const browser = findBrowser();
@@ -47,7 +72,7 @@ test('daily review opens and browser remains responsive', { skip: !browser }, as
   await new Promise(resolveReady => server.listen(0, '127.0.0.1', resolveReady));
   const { port } = server.address();
   try {
-    const result = spawnSync(browser, [
+    const result = await runBrowser(browser, [
       '--headless=new',
       '--no-sandbox',
       '--disable-gpu',
@@ -55,9 +80,8 @@ test('daily review opens and browser remains responsive', { skip: !browser }, as
       '--virtual-time-budget=5000',
       '--dump-dom',
       `http://127.0.0.1:${port}/tests/browser-review-smoke.html`
-    ], { encoding: 'utf8', timeout: 20000, maxBuffer: 20 * 1024 * 1024 });
+    ]);
 
-    assert.equal(result.error?.code, undefined, result.error?.message || 'Browser timed out');
     assert.equal(result.status, 0, result.stderr || 'Headless browser failed');
     assert.match(result.stdout, /data-review-smoke="pass"/u);
     assert.match(result.stdout, /Daily review/u);
