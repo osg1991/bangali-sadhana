@@ -1,6 +1,6 @@
 {
   "name": "bengali-sadhana",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "private": true,
   "type": "module",
   "description": "Offline-first Bengali learning PWA with a gated alphabet-first track, weekly topic curriculum, Ramprasad Sen vocabulary and spaced-repetition review.",
