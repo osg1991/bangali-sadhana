@@ -15,9 +15,7 @@
     words: ['4', 'Words', 'Practical words and Ramprasad vocabulary unlock here.']
   };
 
-  let observer = null;
   let refreshQueued = false;
-  let refreshing = false;
 
   function records() {
     try {
@@ -184,18 +182,10 @@
   }
 
   function refresh() {
-    if (refreshing) return;
-    refreshing = true;
-    observer?.disconnect();
-    try {
-      const progress = currentProgress();
-      updateNavigation(progress);
-      injectPanels(progress);
-      gateToday(progress);
-    } finally {
-      observer?.observe(app, { childList: true });
-      refreshing = false;
-    }
+    const progress = currentProgress();
+    updateNavigation(progress);
+    injectPanels(progress);
+    gateToday(progress);
   }
 
   function scheduleRefresh() {
@@ -222,8 +212,10 @@
     }
   }, true);
 
-  observer = new MutationObserver(scheduleRefresh);
-  observer.observe(app, { childList: true });
+  // Capture all user actions at window level. This runs before document-level
+  // handlers that intentionally stop propagation, and refreshes only once after
+  // the action has completed. No DOM observer is used on the review path.
+  window.addEventListener('click', scheduleRefresh, true);
   window.addEventListener('storage', scheduleRefresh);
   window.addEventListener('load', scheduleRefresh);
   scheduleRefresh();
