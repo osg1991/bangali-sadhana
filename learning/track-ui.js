@@ -15,6 +15,10 @@
     words: ['4', 'Words', 'Practical words and Ramprasad vocabulary unlock here.']
   };
 
+  let observer = null;
+  let refreshQueued = false;
+  let refreshing = false;
+
   function records() {
     try {
       return JSON.parse(localStorage.getItem(STORAGE_KEY))?.records || {};
@@ -86,6 +90,23 @@
       </section>`;
   }
 
+  function progressSignature(progress) {
+    return [
+      progress.activeStage,
+      progress.wordsUnlocked ? 1 : 0,
+      ...['vowels', 'consonants', 'mixed'].flatMap(stage => {
+        const stat = progress.stages[stage] || {};
+        return [stat.mastered || 0, stat.total || 0, stat.complete ? 1 : 0];
+      })
+    ].join(':');
+  }
+
+  function elementFromMarkup(markup) {
+    const container = document.createElement('div');
+    container.innerHTML = markup.trim();
+    return container.firstElementChild;
+  }
+
   function updateNavigation(progress) {
     document.querySelectorAll('.nav-button').forEach(button => {
       const locked = !progress.wordsUnlocked && LOCKED_VIEWS.has(button.dataset.view);
@@ -106,8 +127,10 @@
   function gateToday(progress) {
     const activeView = document.querySelector('.nav-button.active')?.dataset.view;
     if (activeView !== 'today') return;
-    restoreTodayContent();
-    if (progress.wordsUnlocked) return;
+    if (progress.wordsUnlocked) {
+      restoreTodayContent();
+      return;
+    }
 
     const directChildren = [...app.children];
     const start = directChildren.findIndex(element => {
@@ -118,37 +141,70 @@
     if (start < 0) return;
 
     for (const element of directChildren.slice(start)) {
-      element.hidden = true;
-      element.classList.add('track-hidden');
+      if (!element.hidden) element.hidden = true;
+      if (!element.classList.contains('track-hidden')) element.classList.add('track-hidden');
     }
 
-    const lock = document.createElement('section');
-    lock.className = 'card track-lock-message';
-    lock.dataset.trackLockMessage = 'true';
-    lock.innerHTML = `
-      <span class="badge">Next content locked</span>
-      <h2>Master ${escapeHtml(labels[progress.activeStage][1])} first</h2>
-      <p>Continue in <strong>পুনরাবৃত্তি · Review</strong>. Words, sentences and Ramprasad songs will appear here automatically when the alphabet foundation is complete.</p>
-      <button class="primary-button" data-track-open-review>Open today’s alphabet review</button>`;
-    directChildren[start].insertAdjacentElement('beforebegin', lock);
+    const signature = `${progress.activeStage}:${progress.wordsUnlocked ? 1 : 0}`;
+    const existing = app.querySelector('[data-track-lock-message]');
+    if (existing?.dataset.trackLockSignature === signature) return;
+
+    const lock = elementFromMarkup(`
+      <section class="card track-lock-message" data-track-lock-message>
+        <span class="badge">Next content locked</span>
+        <h2>Master ${escapeHtml(labels[progress.activeStage][1])} first</h2>
+        <p>Continue in <strong>পুনরাবৃত্তি · Review</strong>. Words, sentences and Ramprasad songs will appear here automatically when the alphabet foundation is complete.</p>
+        <button class="primary-button" data-track-open-review>Open today’s alphabet review</button>
+      </section>`);
+    lock.dataset.trackLockSignature = signature;
+
+    if (existing) existing.replaceWith(lock);
+    else directChildren[start].insertAdjacentElement('beforebegin', lock);
   }
 
   function injectPanels(progress) {
     const activeView = document.querySelector('.nav-button.active')?.dataset.view;
+    const existing = app.querySelector('[data-learning-track-panel]');
+
+    if (activeView !== 'today' && activeView !== 'review') {
+      existing?.remove();
+      return;
+    }
+
     const hero = app.querySelector(':scope > .hero');
     if (!hero) return;
 
-    app.querySelector('[data-learning-track-panel]')?.remove();
-    if (activeView === 'today' || activeView === 'review') {
-      hero.insertAdjacentHTML('afterend', panelMarkup(progress, activeView === 'today'));
-    }
+    const signature = `${activeView}:${progressSignature(progress)}`;
+    if (existing?.dataset.trackPanelSignature === signature) return;
+
+    const panel = elementFromMarkup(panelMarkup(progress, activeView === 'today'));
+    panel.dataset.trackPanelSignature = signature;
+    if (existing) existing.replaceWith(panel);
+    else hero.insertAdjacentElement('afterend', panel);
   }
 
   function refresh() {
-    const progress = currentProgress();
-    updateNavigation(progress);
-    injectPanels(progress);
-    gateToday(progress);
+    if (refreshing) return;
+    refreshing = true;
+    observer?.disconnect();
+    try {
+      const progress = currentProgress();
+      updateNavigation(progress);
+      injectPanels(progress);
+      gateToday(progress);
+    } finally {
+      observer?.observe(app, { childList: true });
+      refreshing = false;
+    }
+  }
+
+  function scheduleRefresh() {
+    if (refreshQueued) return;
+    refreshQueued = true;
+    queueMicrotask(() => {
+      refreshQueued = false;
+      refresh();
+    });
   }
 
   document.addEventListener('click', event => {
@@ -166,9 +222,11 @@
     }
   }, true);
 
-  const observer = new MutationObserver(() => queueMicrotask(refresh));
+  observer = new MutationObserver(scheduleRefresh);
   observer.observe(app, { childList: true });
-  window.addEventListener('storage', refresh);
-  window.addEventListener('load', refresh);
-  queueMicrotask(refresh);
+  window.addEventListener('storage', scheduleRefresh);
+  window.addEventListener('load', scheduleRefresh);
+  scheduleRefresh();
+
+  window.BENGALI_TRACK_UI = { refresh: scheduleRefresh };
 })();
