@@ -37,8 +37,10 @@ test('all topic cards use the post-foundation words stage', () => {
   assert.equal(concepts.at(-1).trackStage, 'vowels');
 });
 
-test('first topic session mixes vocabulary, functions, numbers and patterns', () => {
-  const cards = curriculumEngine.unitConcepts(globalThis.BENGALI_CURRICULUM.units[0]).slice(0, 5);
+test('Week 20 topic session mixes vocabulary, functions, numbers and patterns', () => {
+  const unit = globalThis.BENGALI_CURRICULUM.units.find(item => item.id === 'a1-week-20-common-adjectives');
+  assert.ok(unit, 'Week 20 Common Adjectives unit should be present');
+  const cards = curriculumEngine.unitConcepts(unit).slice(0, 5);
   assert.deepEqual(cards.map(card => card.section), [
     'Vocabulary',
     'Vocabulary',
