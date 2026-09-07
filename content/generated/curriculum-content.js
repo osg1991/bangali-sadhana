@@ -1,7 +1,2650 @@
 window.BENGALI_CURRICULUM = {
   "schemaVersion": 1,
-  "unitCount": 1,
+  "unitCount": 10,
   "units": [
+    {
+      "id": "a1-week-15-glossika",
+      "level": "A1",
+      "week": 15,
+      "sequence": 15,
+      "topic": "Directions & Places",
+      "status": "source-imported",
+      "source": "glossika-day-15-25.md",
+      "prerequisite": "foundation-mixed-alphabets",
+      "sourceFile": "glossika-day-15-25.md",
+      "functionalLanguage": [
+        {
+          "id": "a1-week-15-glossika-functional-01",
+          "type": "functional-language",
+          "function": "Asking Permission & Warnings",
+          "functionId": "asking-permission-warnings",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ami ki bhetore aśote pari?",
+          "literalGloss": "",
+          "english": "May I come in?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-functional-02",
+          "type": "functional-language",
+          "function": "Asking Permission & Warnings",
+          "functionId": "asking-permission-warnings",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ekhane ki bośote pari?",
+          "literalGloss": "",
+          "english": "May I sit here?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-functional-03",
+          "type": "functional-language",
+          "function": "Asking Permission & Warnings",
+          "functionId": "asking-permission-warnings",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ekṭu dekhte pari?",
+          "literalGloss": "",
+          "english": "Can I take a look?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-functional-04",
+          "type": "functional-language",
+          "function": "Asking Permission & Warnings",
+          "functionId": "asking-permission-warnings",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śabdhane jan.",
+          "literalGloss": "",
+          "english": "Go carefully.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-functional-05",
+          "type": "functional-language",
+          "function": "Asking Permission & Warnings",
+          "functionId": "asking-permission-warnings",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ōṭa chũẏō na.",
+          "literalGloss": "",
+          "english": "Don't touch that.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-functional-06",
+          "type": "functional-language",
+          "function": "Asking Permission & Warnings",
+          "functionId": "asking-permission-warnings",
+          "register": "standard",
+          "bengali": "",
+          "roman": "dekhe col!",
+          "literalGloss": "",
+          "english": "Watch where you're going!",
+          "tamil": ""
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "a1-week-15-glossika-vocab-001",
+          "type": "vocabulary",
+          "bengali": "ডান",
+          "roman": "ḍan",
+          "english": "right",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-002",
+          "type": "vocabulary",
+          "bengali": "বাম",
+          "roman": "bam",
+          "english": "left",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-003",
+          "type": "vocabulary",
+          "bengali": "সোজা",
+          "roman": "śōja",
+          "english": "straight",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-004",
+          "type": "vocabulary",
+          "bengali": "উপর",
+          "roman": "upor",
+          "english": "up/above",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-005",
+          "type": "vocabulary",
+          "bengali": "নিচ",
+          "roman": "nic",
+          "english": "down/below",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-006",
+          "type": "vocabulary",
+          "bengali": "ভেতর",
+          "roman": "bhetor",
+          "english": "inside",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-007",
+          "type": "vocabulary",
+          "bengali": "বাইর",
+          "roman": "bair",
+          "english": "outside",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-008",
+          "type": "vocabulary",
+          "bengali": "পাশ",
+          "roman": "paś",
+          "english": "side/beside",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-009",
+          "type": "vocabulary",
+          "bengali": "সামনে",
+          "roman": "śamone",
+          "english": "in front",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-010",
+          "type": "vocabulary",
+          "bengali": "পেছনে",
+          "roman": "pechone",
+          "english": "behind",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-011",
+          "type": "vocabulary",
+          "bengali": "মাঝে",
+          "roman": "majhe",
+          "english": "in the middle",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-012",
+          "type": "vocabulary",
+          "bengali": "কোণ",
+          "roman": "kōn",
+          "english": "corner",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-013",
+          "type": "vocabulary",
+          "bengali": "মোড়",
+          "roman": "mōṛ",
+          "english": "turning/junction",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-014",
+          "type": "vocabulary",
+          "bengali": "দিক",
+          "roman": "dik",
+          "english": "direction",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-015",
+          "type": "vocabulary",
+          "bengali": "জায়গা",
+          "roman": "jaẏga",
+          "english": "place",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-016",
+          "type": "vocabulary",
+          "bengali": "মন্দির",
+          "roman": "mondir",
+          "english": "temple",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-017",
+          "type": "vocabulary",
+          "bengali": "মসজিদ",
+          "roman": "mosjid",
+          "english": "mosque",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-018",
+          "type": "vocabulary",
+          "bengali": "গির্জা",
+          "roman": "girja",
+          "english": "church",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-019",
+          "type": "vocabulary",
+          "bengali": "পার্ক",
+          "roman": "park",
+          "english": "park",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-020",
+          "type": "vocabulary",
+          "bengali": "থানা",
+          "roman": "thana",
+          "english": "police station",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-021",
+          "type": "vocabulary",
+          "bengali": "ডাকঘর",
+          "roman": "ḍakoghor",
+          "english": "post office",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-022",
+          "type": "vocabulary",
+          "bengali": "হোটেল",
+          "roman": "hōṭel",
+          "english": "hotel",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-023",
+          "type": "vocabulary",
+          "bengali": "পাড়া",
+          "roman": "paṛa",
+          "english": "neighborhood",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-024",
+          "type": "vocabulary",
+          "bengali": "শহর",
+          "roman": "śohor",
+          "english": "city",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-025",
+          "type": "vocabulary",
+          "bengali": "এলাকা",
+          "roman": "elaka",
+          "english": "area",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-026",
+          "type": "vocabulary",
+          "bengali": "ঠিকানা",
+          "roman": "ṭhikana",
+          "english": "address",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-027",
+          "type": "vocabulary",
+          "bengali": "মানচিত্র",
+          "roman": "mancitro",
+          "english": "map",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-028",
+          "type": "vocabulary",
+          "bengali": "চৌরাস্তা",
+          "roman": "cōurasta",
+          "english": "crossroads",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-029",
+          "type": "vocabulary",
+          "bengali": "গলি",
+          "roman": "goli",
+          "english": "alley",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-030",
+          "type": "vocabulary",
+          "bengali": "ফুটপাত",
+          "roman": "phuṭpat",
+          "english": "footpath",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-031",
+          "type": "vocabulary",
+          "bengali": "সিগন্যাল",
+          "roman": "śigonêl",
+          "english": "traffic signal",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-032",
+          "type": "vocabulary",
+          "bengali": "সীমানা",
+          "roman": "śimana",
+          "english": "boundary",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-033",
+          "type": "vocabulary",
+          "bengali": "গন্তব্য",
+          "roman": "gontobbo",
+          "english": "destination",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-034",
+          "type": "vocabulary",
+          "bengali": "দূরত্ব",
+          "roman": "durotto",
+          "english": "distance",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-035",
+          "type": "vocabulary",
+          "bengali": "প্রবেশপথ",
+          "roman": "probeśpoth",
+          "english": "entrance",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-036",
+          "type": "vocabulary",
+          "bengali": "বাহির পথ",
+          "roman": "bahir poth",
+          "english": "exit",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-037",
+          "type": "vocabulary",
+          "bengali": "চিহ্ন",
+          "roman": "cihno",
+          "english": "sign/mark",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-038",
+          "type": "vocabulary",
+          "bengali": "মাইল",
+          "roman": "mail",
+          "english": "mile",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-15-glossika-vocab-039",
+          "type": "vocabulary",
+          "bengali": "কিলোমিটার",
+          "roman": "kilōmiṭar",
+          "english": "kilometer",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        }
+      ],
+      "numbers": [],
+      "situationPatterns": [
+        {
+          "id": "a1-week-15-glossika-pattern-01",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śōja jan, taropor ḍane.",
+          "literalGloss": "",
+          "english": "Go straight, then turn right.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-pattern-02",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "bêṅko kōn dike?",
+          "literalGloss": "",
+          "english": "Which way is the bank?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-pattern-03",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "mondir ḍakghorer paśe.",
+          "literalGloss": "",
+          "english": "The temple is beside the post office.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-pattern-04",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ei mōṛe nam.",
+          "literalGloss": "",
+          "english": "Get off at this corner.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-pattern-05",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "hōṭelṭa śohorer majhe.",
+          "literalGloss": "",
+          "english": "The hotel is in the city center.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-pattern-06",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ḍakoghrṭa ḍan dike.",
+          "literalGloss": "",
+          "english": "The post office is on the right.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-pattern-07",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "cōurastaẏ bã dike jan.",
+          "literalGloss": "",
+          "english": "Turn left at the crossroads.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-pattern-08",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "gontobbo ar kot dur?",
+          "literalGloss": "",
+          "english": "How much farther is the destination?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-15-glossika-pattern-09",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ei goli diẏe jaō.",
+          "literalGloss": "",
+          "english": "Go through this alley.",
+          "tamil": ""
+        }
+      ],
+      "dialogues": []
+    },
+    {
+      "id": "a1-week-16-glossika",
+      "level": "A1",
+      "week": 16,
+      "sequence": 16,
+      "topic": "Hobbies & Free Time",
+      "status": "source-imported",
+      "source": "glossika-day-15-25.md",
+      "prerequisite": "foundation-mixed-alphabets",
+      "sourceFile": "glossika-day-15-25.md",
+      "functionalLanguage": [
+        {
+          "id": "a1-week-16-glossika-functional-01",
+          "type": "functional-language",
+          "function": "Suggestions & Greetings",
+          "functionId": "suggestions-greetings",
+          "register": "standard",
+          "bengali": "",
+          "roman": "colun, ekśoṅge jai.",
+          "literalGloss": "",
+          "english": "Let's go together.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-functional-02",
+          "type": "functional-language",
+          "function": "Suggestions & Greetings",
+          "functionId": "suggestions-greetings",
+          "register": "standard",
+          "bengali": "",
+          "roman": "col, ekṭu hãṭi.",
+          "literalGloss": "",
+          "english": "Come on, let's walk a bit.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-functional-03",
+          "type": "functional-language",
+          "function": "Suggestions & Greetings",
+          "functionId": "suggestions-greetings",
+          "register": "standard",
+          "bengali": "",
+          "roman": "kemon hoẏ jodi amra thaki?",
+          "literalGloss": "",
+          "english": "How about if we stay?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-functional-04",
+          "type": "functional-language",
+          "function": "Suggestions & Greetings",
+          "functionId": "suggestions-greetings",
+          "register": "standard",
+          "bengali": "",
+          "roman": "nomoskar.",
+          "literalGloss": "",
+          "english": "Hello.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-functional-05",
+          "type": "functional-language",
+          "function": "Suggestions & Greetings",
+          "functionId": "suggestions-greetings",
+          "register": "standard",
+          "bengali": "",
+          "roman": "assalamu alaikum.",
+          "literalGloss": "",
+          "english": "Peace be upon you.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-functional-06",
+          "type": "functional-language",
+          "function": "Suggestions & Greetings",
+          "functionId": "suggestions-greetings",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ki khobor.",
+          "literalGloss": "",
+          "english": "What's up?",
+          "tamil": ""
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "a1-week-16-glossika-vocab-001",
+          "type": "vocabulary",
+          "bengali": "শখ",
+          "roman": "śokh",
+          "english": "hobby",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-002",
+          "type": "vocabulary",
+          "bengali": "খেলা",
+          "roman": "khela",
+          "english": "game/to play",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-003",
+          "type": "vocabulary",
+          "bengali": "গান",
+          "roman": "gan",
+          "english": "song",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-004",
+          "type": "vocabulary",
+          "bengali": "নাচ",
+          "roman": "nac",
+          "english": "dance",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-005",
+          "type": "vocabulary",
+          "bengali": "ছবি",
+          "roman": "chobi",
+          "english": "picture/film",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-006",
+          "type": "vocabulary",
+          "bengali": "সিনেমা",
+          "roman": "śinema",
+          "english": "cinema",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-007",
+          "type": "vocabulary",
+          "bengali": "গল্প",
+          "roman": "golpo",
+          "english": "story",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-008",
+          "type": "vocabulary",
+          "bengali": "বেড়ানো",
+          "roman": "beṛanō",
+          "english": "to go out/travel",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-009",
+          "type": "vocabulary",
+          "bengali": "সাঁতার",
+          "roman": "śãtar",
+          "english": "swimming",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-010",
+          "type": "vocabulary",
+          "bengali": "দৌড়",
+          "roman": "dōuṛ",
+          "english": "running",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-011",
+          "type": "vocabulary",
+          "bengali": "ক্রিকেট",
+          "roman": "krikeṭ",
+          "english": "cricket",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-012",
+          "type": "vocabulary",
+          "bengali": "ফুটবল",
+          "roman": "phuṭbol",
+          "english": "football",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-013",
+          "type": "vocabulary",
+          "bengali": "দাবা",
+          "roman": "daba",
+          "english": "chess",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-014",
+          "type": "vocabulary",
+          "bengali": "তাস",
+          "roman": "taś",
+          "english": "cards",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-015",
+          "type": "vocabulary",
+          "bengali": "বাজানো",
+          "roman": "bajanō",
+          "english": "to play (instrument)",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-016",
+          "type": "vocabulary",
+          "bengali": "বাঁশি",
+          "roman": "bãśi",
+          "english": "flute",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-017",
+          "type": "vocabulary",
+          "bengali": "আঁকা",
+          "roman": "ãka",
+          "english": "to draw",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-018",
+          "type": "vocabulary",
+          "bengali": "ছবি তোলা",
+          "roman": "chobi tōla",
+          "english": "to take photos",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-019",
+          "type": "vocabulary",
+          "bengali": "বাগান করা",
+          "roman": "bagan kora",
+          "english": "gardening",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-020",
+          "type": "vocabulary",
+          "bengali": "রান্না করা",
+          "roman": "ranna kora",
+          "english": "to cook",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-021",
+          "type": "vocabulary",
+          "bengali": "বই পড়া",
+          "roman": "boi poṛa",
+          "english": "reading",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-022",
+          "type": "vocabulary",
+          "bengali": "টিভি",
+          "roman": "ṭibhi",
+          "english": "TV",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-023",
+          "type": "vocabulary",
+          "bengali": "গান শোনা",
+          "roman": "gan śōna",
+          "english": "listening to music",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-024",
+          "type": "vocabulary",
+          "bengali": "অবসর",
+          "roman": "obśor",
+          "english": "leisure",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-025",
+          "type": "vocabulary",
+          "bengali": "মজা",
+          "roman": "moja",
+          "english": "fun",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-026",
+          "type": "vocabulary",
+          "bengali": "হাঁটা",
+          "roman": "hãṭa",
+          "english": "walking",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-027",
+          "type": "vocabulary",
+          "bengali": "খেলোয়াড়",
+          "roman": "khelōẇaṛ",
+          "english": "player",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-028",
+          "type": "vocabulary",
+          "bengali": "সংগ্রহ",
+          "roman": "śoṅgroho",
+          "english": "collection",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-029",
+          "type": "vocabulary",
+          "bengali": "ডাকটিকিট",
+          "roman": "ḍakṭikiṭ",
+          "english": "postage stamp",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-030",
+          "type": "vocabulary",
+          "bengali": "বাগানচর্চা",
+          "roman": "bagancorca",
+          "english": "gardening (pastime)",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-031",
+          "type": "vocabulary",
+          "bengali": "মাছ ধরা",
+          "roman": "mach dhora",
+          "english": "fishing",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-032",
+          "type": "vocabulary",
+          "bengali": "পর্বতারোহণ",
+          "roman": "porbotarōhon",
+          "english": "mountaineering",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-033",
+          "type": "vocabulary",
+          "bengali": "ভ্রমণ",
+          "roman": "bhromon",
+          "english": "travel/tour",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-034",
+          "type": "vocabulary",
+          "bengali": "আবৃত্তি",
+          "roman": "abritti",
+          "english": "recitation",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-035",
+          "type": "vocabulary",
+          "bengali": "অভিনয়",
+          "roman": "obhinoẏ",
+          "english": "acting",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-036",
+          "type": "vocabulary",
+          "bengali": "বাদ্যযন্ত্র",
+          "roman": "baddojontro",
+          "english": "musical instrument",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-037",
+          "type": "vocabulary",
+          "bengali": "হারমোনিয়াম",
+          "roman": "harmōniẏam",
+          "english": "harmonium",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-038",
+          "type": "vocabulary",
+          "bengali": "তবলা",
+          "roman": "tobola",
+          "english": "tabla",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-16-glossika-vocab-039",
+          "type": "vocabulary",
+          "bengali": "চিত্রকলা",
+          "roman": "citrokola",
+          "english": "painting (art)",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        }
+      ],
+      "numbers": [],
+      "situationPatterns": [
+        {
+          "id": "a1-week-16-glossika-pattern-01",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "amar gan śunote bhalō lage.",
+          "literalGloss": "",
+          "english": "I like listening to music.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-pattern-02",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śe bhalō krikeṭ khele.",
+          "literalGloss": "",
+          "english": "He plays cricket well.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-pattern-03",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "col, śinema dekhi.",
+          "literalGloss": "",
+          "english": "Come on, let's watch a film.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-pattern-04",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "obśore ami boi poṛi.",
+          "literalGloss": "",
+          "english": "In my free time I read books.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-pattern-05",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "tumi ki khelote pochondo kor?",
+          "literalGloss": "",
+          "english": "What do you like to play?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-pattern-06",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śe rōj śokale dōuṛaẏ.",
+          "literalGloss": "",
+          "english": "He runs every morning.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-pattern-07",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śe tobola bajate pare.",
+          "literalGloss": "",
+          "english": "He can play the tabla.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-pattern-08",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "amar ḍakṭikiṭ śoṅgroher śokh.",
+          "literalGloss": "",
+          "english": "My hobby is collecting stamps.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-16-glossika-pattern-09",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "chuṭite amra bhromone jai.",
+          "literalGloss": "",
+          "english": "On holidays we go traveling.",
+          "tamil": ""
+        }
+      ],
+      "dialogues": []
+    },
+    {
+      "id": "a1-week-17-glossika",
+      "level": "A1",
+      "week": 17,
+      "sequence": 17,
+      "topic": "Emotions & States",
+      "status": "source-imported",
+      "source": "glossika-day-15-25.md",
+      "prerequisite": "foundation-mixed-alphabets",
+      "sourceFile": "glossika-day-15-25.md",
+      "functionalLanguage": [
+        {
+          "id": "a1-week-17-glossika-functional-01",
+          "type": "functional-language",
+          "function": "Farewells & Introductions",
+          "functionId": "farewells-introductions",
+          "register": "standard",
+          "bengali": "",
+          "roman": "abar dekha hobe.",
+          "literalGloss": "",
+          "english": "See you again.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-functional-02",
+          "type": "functional-language",
+          "function": "Farewells & Introductions",
+          "functionId": "farewells-introductions",
+          "register": "standard",
+          "bengali": "",
+          "roman": "bidaẏ.",
+          "literalGloss": "",
+          "english": "Goodbye.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-functional-03",
+          "type": "functional-language",
+          "function": "Farewells & Introductions",
+          "functionId": "farewells-introductions",
+          "register": "standard",
+          "bengali": "",
+          "roman": "coli tahole.",
+          "literalGloss": "",
+          "english": "I'm off then.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-functional-04",
+          "type": "functional-language",
+          "function": "Farewells & Introductions",
+          "functionId": "farewells-introductions",
+          "register": "standard",
+          "bengali": "",
+          "roman": "poricito hoẏe bhalō lagol.",
+          "literalGloss": "",
+          "english": "Nice to meet you.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-functional-05",
+          "type": "functional-language",
+          "function": "Farewells & Introductions",
+          "functionId": "farewells-introductions",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ini amar bondhu.",
+          "literalGloss": "",
+          "english": "This is my friend.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-functional-06",
+          "type": "functional-language",
+          "function": "Farewells & Introductions",
+          "functionId": "farewells-introductions",
+          "register": "standard",
+          "bengali": "",
+          "roman": "alap koriẏe dii.",
+          "literalGloss": "",
+          "english": "Let me introduce you.",
+          "tamil": ""
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "a1-week-17-glossika-vocab-001",
+          "type": "vocabulary",
+          "bengali": "খুশি",
+          "roman": "khuśi",
+          "english": "happy",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-002",
+          "type": "vocabulary",
+          "bengali": "দুঃখ",
+          "roman": "dukkho",
+          "english": "sorrow",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-003",
+          "type": "vocabulary",
+          "bengali": "রাগ",
+          "roman": "rag",
+          "english": "anger",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-004",
+          "type": "vocabulary",
+          "bengali": "ভয়",
+          "roman": "bhoẏ",
+          "english": "fear",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-005",
+          "type": "vocabulary",
+          "bengali": "ভালোবাসা",
+          "roman": "bhalōbaśa",
+          "english": "love",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-006",
+          "type": "vocabulary",
+          "bengali": "হাসি",
+          "roman": "haśi",
+          "english": "laughter/smile",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-007",
+          "type": "vocabulary",
+          "bengali": "কান্না",
+          "roman": "kanna",
+          "english": "crying",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-008",
+          "type": "vocabulary",
+          "bengali": "চিন্তা",
+          "roman": "cinta",
+          "english": "worry",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-009",
+          "type": "vocabulary",
+          "bengali": "আনন্দ",
+          "roman": "anndo",
+          "english": "joy",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-010",
+          "type": "vocabulary",
+          "bengali": "বিরক্ত",
+          "roman": "birokto",
+          "english": "annoyed",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-011",
+          "type": "vocabulary",
+          "bengali": "একা",
+          "roman": "eka",
+          "english": "alone/lonely",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-012",
+          "type": "vocabulary",
+          "bengali": "ক্লান্ত",
+          "roman": "klanto",
+          "english": "tired",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-013",
+          "type": "vocabulary",
+          "bengali": "শান্ত",
+          "roman": "śanto",
+          "english": "calm",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-014",
+          "type": "vocabulary",
+          "bengali": "উত্তেজিত",
+          "roman": "uttejito",
+          "english": "excited",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-015",
+          "type": "vocabulary",
+          "bengali": "গর্ব",
+          "roman": "gorbo",
+          "english": "pride",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-016",
+          "type": "vocabulary",
+          "bengali": "লজ্জা",
+          "roman": "lojja",
+          "english": "shame/shy",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-017",
+          "type": "vocabulary",
+          "bengali": "আশা",
+          "roman": "aśa",
+          "english": "hope",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-018",
+          "type": "vocabulary",
+          "bengali": "হতাশ",
+          "roman": "hotaś",
+          "english": "disappointed",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-019",
+          "type": "vocabulary",
+          "bengali": "অবাক",
+          "roman": "obak",
+          "english": "surprised",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-020",
+          "type": "vocabulary",
+          "bengali": "বিরক্তি",
+          "roman": "birokti",
+          "english": "irritation",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-021",
+          "type": "vocabulary",
+          "bengali": "মন",
+          "roman": "mon",
+          "english": "mind/heart",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-022",
+          "type": "vocabulary",
+          "bengali": "অনুভূতি",
+          "roman": "onubhuti",
+          "english": "feeling",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-023",
+          "type": "vocabulary",
+          "bengali": "স্বস্তি",
+          "roman": "śosti",
+          "english": "relief",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-024",
+          "type": "vocabulary",
+          "bengali": "কষ্ট",
+          "roman": "kośṭo",
+          "english": "suffering/pain",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-025",
+          "type": "vocabulary",
+          "bengali": "আগ্রহ",
+          "roman": "agroho",
+          "english": "interest",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-026",
+          "type": "vocabulary",
+          "bengali": "ঈর্ষা",
+          "roman": "irśa",
+          "english": "jealousy",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-027",
+          "type": "vocabulary",
+          "bengali": "সাহস",
+          "roman": "śahoś",
+          "english": "courage",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-028",
+          "type": "vocabulary",
+          "bengali": "ভালোলাগা",
+          "roman": "bhalōlaga",
+          "english": "fondness/liking",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-029",
+          "type": "vocabulary",
+          "bengali": "মায়া",
+          "roman": "maẏa",
+          "english": "affection",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-030",
+          "type": "vocabulary",
+          "bengali": "করুণা",
+          "roman": "koruna",
+          "english": "compassion",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-031",
+          "type": "vocabulary",
+          "bengali": "ঘৃণা",
+          "roman": "ghrina",
+          "english": "hatred",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-032",
+          "type": "vocabulary",
+          "bengali": "সন্দেহ",
+          "roman": "śondeho",
+          "english": "doubt/suspicion",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-033",
+          "type": "vocabulary",
+          "bengali": "আত্মবিশ্বাস",
+          "roman": "attobiśśaś",
+          "english": "self-confidence",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-034",
+          "type": "vocabulary",
+          "bengali": "উদ্বেগ",
+          "roman": "udbeg",
+          "english": "anxiety",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-035",
+          "type": "vocabulary",
+          "bengali": "শোক",
+          "roman": "śōk",
+          "english": "grief",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-036",
+          "type": "vocabulary",
+          "bengali": "আবেগ",
+          "roman": "abeg",
+          "english": "emotion",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-037",
+          "type": "vocabulary",
+          "bengali": "তৃপ্তি",
+          "roman": "tripti",
+          "english": "satisfaction",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-038",
+          "type": "vocabulary",
+          "bengali": "আতঙ্ক",
+          "roman": "atoṅko",
+          "english": "panic/terror",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-17-glossika-vocab-039",
+          "type": "vocabulary",
+          "bengali": "সহানুভূতি",
+          "roman": "śohanubhuti",
+          "english": "sympathy",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        }
+      ],
+      "numbers": [],
+      "situationPatterns": [
+        {
+          "id": "a1-week-17-glossika-pattern-01",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ami khub khuśi.",
+          "literalGloss": "",
+          "english": "I am very happy.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-pattern-02",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "tar mon kharap.",
+          "literalGloss": "",
+          "english": "He is sad.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-pattern-03",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "bhoẏ paś na.",
+          "literalGloss": "",
+          "english": "Don't be afraid.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-pattern-04",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ami ekṭu cintit.",
+          "literalGloss": "",
+          "english": "I am a little worried.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-pattern-05",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "tōmake dekhe anndo holō.",
+          "literalGloss": "",
+          "english": "I was glad to see you.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-pattern-06",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "tōmake dekhe śśosti pelam.",
+          "literalGloss": "",
+          "english": "I felt relieved to see you.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-pattern-07",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "tar proti amar maẏa hoẏ.",
+          "literalGloss": "",
+          "english": "I feel affection toward him.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-pattern-08",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "amar mone ekṭu śondeho ache.",
+          "literalGloss": "",
+          "english": "I have a little doubt in my mind.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-17-glossika-pattern-09",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "kajṭa śeś kore tripti pelam.",
+          "literalGloss": "",
+          "english": "I felt satisfied finishing the work.",
+          "tamil": ""
+        }
+      ],
+      "dialogues": []
+    },
+    {
+      "id": "a1-week-18-glossika",
+      "level": "A1",
+      "week": 18,
+      "sequence": 18,
+      "topic": "Common Verbs",
+      "status": "source-imported",
+      "source": "glossika-day-15-25.md",
+      "prerequisite": "foundation-mixed-alphabets",
+      "sourceFile": "glossika-day-15-25.md",
+      "functionalLanguage": [
+        {
+          "id": "a1-week-18-glossika-functional-01",
+          "type": "functional-language",
+          "function": "Thanking & Apologizing",
+          "functionId": "thanking-apologizing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "dhonnobad.",
+          "literalGloss": "",
+          "english": "Thank you.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-functional-02",
+          "type": "functional-language",
+          "function": "Thanking & Apologizing",
+          "functionId": "thanking-apologizing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "onek dhonnobad.",
+          "literalGloss": "",
+          "english": "Thank you very much.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-functional-03",
+          "type": "functional-language",
+          "function": "Thanking & Apologizing",
+          "functionId": "thanking-apologizing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "thêṅko iu.",
+          "literalGloss": "",
+          "english": "Thanks.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-functional-04",
+          "type": "functional-language",
+          "function": "Thanking & Apologizing",
+          "functionId": "thanking-apologizing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "dukkhit.",
+          "literalGloss": "",
+          "english": "I'm sorry.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-functional-05",
+          "type": "functional-language",
+          "function": "Thanking & Apologizing",
+          "functionId": "thanking-apologizing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "maph korben.",
+          "literalGloss": "",
+          "english": "Please excuse me.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-functional-06",
+          "type": "functional-language",
+          "function": "Thanking & Apologizing",
+          "functionId": "thanking-apologizing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "sêri re.",
+          "literalGloss": "",
+          "english": "Sorry.",
+          "tamil": ""
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "a1-week-18-glossika-vocab-001",
+          "type": "vocabulary",
+          "bengali": "**Action words:** go",
+          "roman": "",
+          "english": "jaōẇa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-002",
+          "type": "vocabulary",
+          "bengali": "come",
+          "roman": "",
+          "english": "aśa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-003",
+          "type": "vocabulary",
+          "bengali": "do",
+          "roman": "",
+          "english": "kora",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-004",
+          "type": "vocabulary",
+          "bengali": "give",
+          "roman": "",
+          "english": "deōẇa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-005",
+          "type": "vocabulary",
+          "bengali": "take",
+          "roman": "",
+          "english": "neōẇa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-006",
+          "type": "vocabulary",
+          "bengali": "say",
+          "roman": "",
+          "english": "bola",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-007",
+          "type": "vocabulary",
+          "bengali": "hear",
+          "roman": "",
+          "english": "śōna",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-008",
+          "type": "vocabulary",
+          "bengali": "look at",
+          "roman": "",
+          "english": "takanō",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-009",
+          "type": "vocabulary",
+          "bengali": "know",
+          "roman": "",
+          "english": "jana",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-010",
+          "type": "vocabulary",
+          "bengali": "understand",
+          "roman": "",
+          "english": "bōjha",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-011",
+          "type": "vocabulary",
+          "bengali": "stay/be",
+          "roman": "",
+          "english": "thaka",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-012",
+          "type": "vocabulary",
+          "bengali": "sit",
+          "roman": "",
+          "english": "bośa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-013",
+          "type": "vocabulary",
+          "bengali": "stand",
+          "roman": "",
+          "english": "dãṛanō",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-014",
+          "type": "vocabulary",
+          "bengali": "sleep",
+          "roman": "",
+          "english": "ghumanō",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-015",
+          "type": "vocabulary",
+          "bengali": "wake up",
+          "roman": "",
+          "english": "jaga",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-016",
+          "type": "vocabulary",
+          "bengali": "hold/catch",
+          "roman": "",
+          "english": "dhora",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-017",
+          "type": "vocabulary",
+          "bengali": "touch",
+          "roman": "",
+          "english": "chō̃ẇa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-018",
+          "type": "vocabulary",
+          "bengali": "return",
+          "roman": "",
+          "english": "phera",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-019",
+          "type": "vocabulary",
+          "bengali": "close",
+          "roman": "",
+          "english": "bondho kora",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-020",
+          "type": "vocabulary",
+          "bengali": "want",
+          "roman": "",
+          "english": "caōẇa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-021",
+          "type": "vocabulary",
+          "bengali": "able",
+          "roman": "",
+          "english": "para",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-022",
+          "type": "vocabulary",
+          "bengali": "think",
+          "roman": "",
+          "english": "bhaba",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-023",
+          "type": "vocabulary",
+          "bengali": "call",
+          "roman": "",
+          "english": "ḍaka",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-024",
+          "type": "vocabulary",
+          "bengali": "become",
+          "roman": "",
+          "english": "hoōẇa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-025",
+          "type": "vocabulary",
+          "bengali": "keep",
+          "roman": "",
+          "english": "rakha",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-026",
+          "type": "vocabulary",
+          "bengali": "bring",
+          "roman": "",
+          "english": "ana",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-027",
+          "type": "vocabulary",
+          "bengali": "run",
+          "roman": "",
+          "english": "dōuṛanō",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-028",
+          "type": "vocabulary",
+          "bengali": "search",
+          "roman": "",
+          "english": "śondhan kora",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-029",
+          "type": "vocabulary",
+          "bengali": "teach",
+          "roman": "",
+          "english": "śekhanō",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-030",
+          "type": "vocabulary",
+          "bengali": "show",
+          "roman": "",
+          "english": "dekhanō",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-031",
+          "type": "vocabulary",
+          "bengali": "send",
+          "roman": "",
+          "english": "paṭhanō",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-032",
+          "type": "vocabulary",
+          "bengali": "shop",
+          "roman": "",
+          "english": "kenakaṭa kora",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-033",
+          "type": "vocabulary",
+          "bengali": "clean",
+          "roman": "",
+          "english": "poriśkar kora",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-034",
+          "type": "vocabulary",
+          "bengali": "hide",
+          "roman": "",
+          "english": "lukanō",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-035",
+          "type": "vocabulary",
+          "bengali": "count",
+          "roman": "",
+          "english": "gōna",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-036",
+          "type": "vocabulary",
+          "bengali": "measure",
+          "roman": "",
+          "english": "mapojōk kora",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-037",
+          "type": "vocabulary",
+          "bengali": "pull",
+          "roman": "",
+          "english": "ṭana",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-038",
+          "type": "vocabulary",
+          "bengali": "push",
+          "roman": "",
+          "english": "ṭhela",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-18-glossika-vocab-039",
+          "type": "vocabulary",
+          "bengali": "break",
+          "roman": "",
+          "english": "bhaṅa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        }
+      ],
+      "numbers": [],
+      "situationPatterns": [
+        {
+          "id": "a1-week-18-glossika-pattern-01",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ami bajare jacchi.",
+          "literalGloss": "",
+          "english": "I am going to the market.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-pattern-02",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śe kotha boloche.",
+          "literalGloss": "",
+          "english": "He is talking.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-pattern-03",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ekṭu dãṛa!",
+          "literalGloss": "",
+          "english": "Wait a second!",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-pattern-04",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ami bujhote parchi na.",
+          "literalGloss": "",
+          "english": "I can't understand.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-pattern-05",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "dorjaṭa khōlō.",
+          "literalGloss": "",
+          "english": "Open the door.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-pattern-06",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ekṭu opekkha korō, ami aśochi.",
+          "literalGloss": "",
+          "english": "Wait a bit, I'm coming.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-pattern-07",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "amake rastaṭa dekhaō.",
+          "literalGloss": "",
+          "english": "Show me the road.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-pattern-08",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śe amake baṅla śekhaẏ.",
+          "literalGloss": "",
+          "english": "He teaches me Bengali.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-18-glossika-pattern-09",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "dorjaṭa ṭhele khōlō.",
+          "literalGloss": "",
+          "english": "Push the door open.",
+          "tamil": ""
+        }
+      ],
+      "dialogues": []
+    },
+    {
+      "id": "a1-week-19-glossika",
+      "level": "A1",
+      "week": 19,
+      "sequence": 19,
+      "topic": "Classifiers / Function Words",
+      "status": "source-imported",
+      "source": "glossika-day-15-25.md",
+      "prerequisite": "foundation-mixed-alphabets",
+      "sourceFile": "glossika-day-15-25.md",
+      "functionalLanguage": [
+        {
+          "id": "a1-week-19-glossika-functional-01",
+          "type": "functional-language",
+          "function": "Well-wishing",
+          "functionId": "well-wishing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śubho śokal.",
+          "literalGloss": "",
+          "english": "Good morning.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-19-glossika-functional-02",
+          "type": "functional-language",
+          "function": "Well-wishing",
+          "functionId": "well-wishing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śubho jonmodin.",
+          "literalGloss": "",
+          "english": "Happy birthday.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-19-glossika-functional-03",
+          "type": "functional-language",
+          "function": "Well-wishing",
+          "functionId": "well-wishing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "bhalō thekō.",
+          "literalGloss": "",
+          "english": "Take care.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-19-glossika-functional-04",
+          "type": "functional-language",
+          "function": "Well-wishing",
+          "functionId": "well-wishing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "tumi kemon ach?",
+          "literalGloss": "",
+          "english": "How are you?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-19-glossika-functional-05",
+          "type": "functional-language",
+          "function": "Well-wishing",
+          "functionId": "well-wishing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ami bhalō achi.",
+          "literalGloss": "",
+          "english": "I am well.",
+          "tamil": ""
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "a1-week-19-glossika-vocab-001",
+          "type": "vocabulary",
+          "bengali": "**Classifiers:** টা",
+          "roman": "",
+          "english": "ṭa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-002",
+          "type": "vocabulary",
+          "bengali": "টি",
+          "roman": "",
+          "english": "ṭi",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-003",
+          "type": "vocabulary",
+          "bengali": "জন",
+          "roman": "",
+          "english": "jon",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-004",
+          "type": "vocabulary",
+          "bengali": "খানা",
+          "roman": "",
+          "english": "khana",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-005",
+          "type": "vocabulary",
+          "bengali": "গুলো",
+          "roman": "",
+          "english": "plural marker",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-006",
+          "type": "vocabulary",
+          "bengali": "টুকু",
+          "roman": "",
+          "english": "a bit",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-007",
+          "type": "vocabulary",
+          "bengali": "**Other functional words:** ei",
+          "roman": "",
+          "english": "this",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-008",
+          "type": "vocabulary",
+          "bengali": "ōi",
+          "roman": "",
+          "english": "that",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-009",
+          "type": "vocabulary",
+          "bengali": "kōnō",
+          "roman": "",
+          "english": "any",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-010",
+          "type": "vocabulary",
+          "bengali": "śobo",
+          "roman": "",
+          "english": "all",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-011",
+          "type": "vocabulary",
+          "bengali": "kichu",
+          "roman": "",
+          "english": "some",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-012",
+          "type": "vocabulary",
+          "bengali": "proti",
+          "roman": "",
+          "english": "each",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-013",
+          "type": "vocabulary",
+          "bengali": "ar",
+          "roman": "",
+          "english": "and/more",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-014",
+          "type": "vocabulary",
+          "bengali": "ba",
+          "roman": "",
+          "english": "or",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-015",
+          "type": "vocabulary",
+          "bengali": "kintu",
+          "roman": "",
+          "english": "but",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-016",
+          "type": "vocabulary",
+          "bengali": "tai",
+          "roman": "",
+          "english": "so",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-017",
+          "type": "vocabulary",
+          "bengali": "jodi",
+          "roman": "",
+          "english": "if",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-018",
+          "type": "vocabulary",
+          "bengali": "tobe",
+          "roman": "",
+          "english": "then",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-19-glossika-vocab-019",
+          "type": "vocabulary",
+          "bengali": "je",
+          "roman": "",
+          "english": "that conj",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        }
+      ],
+      "numbers": [],
+      "situationPatterns": [
+        {
+          "id": "a1-week-19-glossika-pattern-01",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ekṭa boi din.",
+          "literalGloss": "",
+          "english": "Please give me a book.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-19-glossika-pattern-02",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "dujon lōk eśeche.",
+          "literalGloss": "",
+          "english": "Two people have come.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-19-glossika-pattern-03",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ei jinisṭa kar?",
+          "literalGloss": "",
+          "english": "Whose thing is this?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-19-glossika-pattern-04",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śobo chatro eśeche.",
+          "literalGloss": "",
+          "english": "All the students have come.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-19-glossika-pattern-05",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "jodi śomoẏ thake, aśob.",
+          "literalGloss": "",
+          "english": "If I have time, I'll come.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-19-glossika-pattern-06",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ōi lōkṭake cini na.",
+          "literalGloss": "",
+          "english": "I don't know that man.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-19-glossika-pattern-07",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "prottek chatro ekṭa boi peẏeche.",
+          "literalGloss": "",
+          "english": "Every student got a book.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-19-glossika-pattern-08",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "tumi chaṛa keu aśeni.",
+          "literalGloss": "",
+          "english": "No one came except you.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-19-glossika-pattern-09",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "kolom diẏe lekhō.",
+          "literalGloss": "",
+          "english": "Write with a pen.",
+          "tamil": ""
+        }
+      ],
+      "dialogues": []
+    },
     {
       "id": "a1-week-20-common-adjectives",
       "level": "A1",
@@ -748,6 +3391,1203 @@ window.BENGALI_CURRICULUM = {
           ]
         }
       ]
+    },
+    {
+      "id": "a1-week-21-glossika",
+      "level": "A1",
+      "week": 21,
+      "sequence": 21,
+      "topic": "Question Words",
+      "status": "source-imported",
+      "source": "glossika-day-15-25.md",
+      "prerequisite": "foundation-mixed-alphabets",
+      "sourceFile": "glossika-day-15-25.md",
+      "functionalLanguage": [
+        {
+          "id": "a1-week-21-glossika-functional-01",
+          "type": "functional-language",
+          "function": "Sequencing",
+          "functionId": "sequencing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "prothome ca, taropor khabar.",
+          "literalGloss": "",
+          "english": "First tea, then food.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-21-glossika-functional-02",
+          "type": "functional-language",
+          "function": "Sequencing",
+          "functionId": "sequencing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "age tumi bol.",
+          "literalGloss": "",
+          "english": "You go first.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-21-glossika-functional-03",
+          "type": "functional-language",
+          "function": "Sequencing",
+          "functionId": "sequencing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śeśe amra jab.",
+          "literalGloss": "",
+          "english": "At the end we will go.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-21-glossika-functional-04",
+          "type": "functional-language",
+          "function": "Sequencing",
+          "functionId": "sequencing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "abar bolun.",
+          "literalGloss": "",
+          "english": "Please say it again.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-21-glossika-functional-05",
+          "type": "functional-language",
+          "function": "Sequencing",
+          "functionId": "sequencing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ki bololen?",
+          "literalGloss": "",
+          "english": "What did you say?",
+          "tamil": ""
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "a1-week-21-glossika-vocab-001",
+          "type": "vocabulary",
+          "bengali": "What",
+          "roman": "",
+          "english": "ki",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-002",
+          "type": "vocabulary",
+          "bengali": "Who",
+          "roman": "",
+          "english": "ke",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-003",
+          "type": "vocabulary",
+          "bengali": "Where",
+          "roman": "",
+          "english": "kōthaẏ",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-004",
+          "type": "vocabulary",
+          "bengali": "At what time",
+          "roman": "",
+          "english": "kōnśomoẏ",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-005",
+          "type": "vocabulary",
+          "bengali": "Why",
+          "roman": "",
+          "english": "keno",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-006",
+          "type": "vocabulary",
+          "bengali": "How",
+          "roman": "",
+          "english": "kibhabe",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-007",
+          "type": "vocabulary",
+          "bengali": "How much",
+          "roman": "",
+          "english": "kot",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-008",
+          "type": "vocabulary",
+          "bengali": "How many",
+          "roman": "",
+          "english": "koẏ",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-009",
+          "type": "vocabulary",
+          "bengali": "Which",
+          "roman": "",
+          "english": "kōn",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-010",
+          "type": "vocabulary",
+          "bengali": "Whose",
+          "roman": "",
+          "english": "kar",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-011",
+          "type": "vocabulary",
+          "bengali": "To whom",
+          "roman": "",
+          "english": "kake",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-012",
+          "type": "vocabulary",
+          "bengali": "Which one",
+          "roman": "",
+          "english": "kōnṭa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-013",
+          "type": "vocabulary",
+          "bengali": "How much/degree",
+          "roman": "",
+          "english": "kotṭa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-014",
+          "type": "vocabulary",
+          "bengali": "What kind",
+          "roman": "",
+          "english": "kirkom",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-015",
+          "type": "vocabulary",
+          "bengali": "When/what day",
+          "roman": "",
+          "english": "kobe",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-016",
+          "type": "vocabulary",
+          "bengali": "How long",
+          "roman": "",
+          "english": "kotokkhon",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-21-glossika-vocab-017",
+          "type": "vocabulary",
+          "bengali": "Which way",
+          "roman": "",
+          "english": "kōndike",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        }
+      ],
+      "numbers": [],
+      "situationPatterns": [
+        {
+          "id": "a1-week-21-glossika-pattern-01",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "tumi kōthaẏ jaccho?",
+          "literalGloss": "",
+          "english": "Where are you going?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-21-glossika-pattern-02",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "eṭa ke koreche?",
+          "literalGloss": "",
+          "english": "Who did this?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-21-glossika-pattern-03",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "tumi keno eśech?",
+          "literalGloss": "",
+          "english": "Why did you come?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-21-glossika-pattern-04",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "kobe asbi?",
+          "literalGloss": "",
+          "english": "When will you come?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-21-glossika-pattern-05",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "eṭa kibhabe holō?",
+          "literalGloss": "",
+          "english": "How did this happen?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-21-glossika-pattern-06",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "tumi kake khũjoch?",
+          "literalGloss": "",
+          "english": "Who are you looking for?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-21-glossika-pattern-07",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "tumi kōtha theke śunle?",
+          "literalGloss": "",
+          "english": "Where did you hear it from?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-21-glossika-pattern-08",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "eṭa kiśer tōiri?",
+          "literalGloss": "",
+          "english": "What is this made of?",
+          "tamil": ""
+        }
+      ],
+      "dialogues": []
+    },
+    {
+      "id": "a1-week-23-glossika",
+      "level": "A1",
+      "week": 23,
+      "sequence": 23,
+      "topic": "At a Restaurant",
+      "status": "source-imported",
+      "source": "glossika-day-15-25.md",
+      "prerequisite": "foundation-mixed-alphabets",
+      "sourceFile": "glossika-day-15-25.md",
+      "functionalLanguage": [
+        {
+          "id": "a1-week-23-glossika-functional-01",
+          "type": "functional-language",
+          "function": "Clarification",
+          "functionId": "clarification",
+          "register": "standard",
+          "bengali": "",
+          "roman": "mane ki?",
+          "literalGloss": "",
+          "english": "What does it mean?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-23-glossika-functional-02",
+          "type": "functional-language",
+          "function": "Clarification",
+          "functionId": "clarification",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ekṭu bujhiẏe bolun.",
+          "literalGloss": "",
+          "english": "Please explain a bit.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-23-glossika-functional-03",
+          "type": "functional-language",
+          "function": "Clarification",
+          "functionId": "clarification",
+          "register": "standard",
+          "bengali": "",
+          "roman": "jai hōk, onno kotha boli.",
+          "literalGloss": "",
+          "english": "Anyway, let's talk about something else.",
+          "tamil": ""
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "a1-week-23-glossika-vocab-001",
+          "type": "vocabulary",
+          "bengali": "restaurant",
+          "roman": "",
+          "english": "resṭurenṭo",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-002",
+          "type": "vocabulary",
+          "bengali": "menu",
+          "roman": "",
+          "english": "menu",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-003",
+          "type": "vocabulary",
+          "bengali": "waiter",
+          "roman": "",
+          "english": "ōẇeṭar",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-004",
+          "type": "vocabulary",
+          "bengali": "plate",
+          "roman": "",
+          "english": "thala",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-005",
+          "type": "vocabulary",
+          "bengali": "glass",
+          "roman": "",
+          "english": "glaś",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-006",
+          "type": "vocabulary",
+          "bengali": "spoon",
+          "roman": "",
+          "english": "camoc",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-007",
+          "type": "vocabulary",
+          "bengali": "fork",
+          "roman": "",
+          "english": "kãṭa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-008",
+          "type": "vocabulary",
+          "bengali": "knife",
+          "roman": "",
+          "english": "churi",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-009",
+          "type": "vocabulary",
+          "bengali": "bowl",
+          "roman": "",
+          "english": "baṭi",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-010",
+          "type": "vocabulary",
+          "bengali": "napkin",
+          "roman": "",
+          "english": "nêpokin",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-011",
+          "type": "vocabulary",
+          "bengali": "biryani",
+          "roman": "",
+          "english": "biriẏani",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-012",
+          "type": "vocabulary",
+          "bengali": "pilaf",
+          "roman": "",
+          "english": "pōlaō",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-013",
+          "type": "vocabulary",
+          "bengali": "kebab",
+          "roman": "",
+          "english": "kabab",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-014",
+          "type": "vocabulary",
+          "bengali": "yogurt",
+          "roman": "",
+          "english": "doi",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-015",
+          "type": "vocabulary",
+          "bengali": "rosogolla",
+          "roman": "",
+          "english": "rośogōlla",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-016",
+          "type": "vocabulary",
+          "bengali": "sherbet",
+          "roman": "",
+          "english": "śorbet",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-017",
+          "type": "vocabulary",
+          "bengali": "lassi",
+          "roman": "",
+          "english": "lacchi",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-018",
+          "type": "vocabulary",
+          "bengali": "soup",
+          "roman": "",
+          "english": "śup",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-23-glossika-vocab-019",
+          "type": "vocabulary",
+          "bengali": "hot drink/food",
+          "roman": "",
+          "english": "gorom gorom",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        }
+      ],
+      "numbers": [],
+      "situationPatterns": [
+        {
+          "id": "a1-week-23-glossika-pattern-01",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "menuṭa din tō.",
+          "literalGloss": "",
+          "english": "Please bring the menu.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-23-glossika-pattern-02",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ami ekṭa biriẏani neb.",
+          "literalGloss": "",
+          "english": "I'll have one biryani.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-23-glossika-pattern-03",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ekṭu pani anun.",
+          "literalGloss": "",
+          "english": "Please bring some water.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-23-glossika-pattern-04",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "khabarṭa darun chil.",
+          "literalGloss": "",
+          "english": "The food was great.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-23-glossika-pattern-05",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "bil niẏe aśun.",
+          "literalGloss": "",
+          "english": "Please bring the bill.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-23-glossika-pattern-06",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "bilṭa ekṭu taṛataṛi din.",
+          "literalGloss": "",
+          "english": "Please bring the bill quickly.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-23-glossika-pattern-07",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śokaler nastaẏ luci chil.",
+          "literalGloss": "",
+          "english": "There was luchi for breakfast.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-23-glossika-pattern-08",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ekṭu caṭoni din tō.",
+          "literalGloss": "",
+          "english": "Please give a little chutney.",
+          "tamil": ""
+        }
+      ],
+      "dialogues": []
+    },
+    {
+      "id": "a1-week-24-glossika",
+      "level": "A1",
+      "week": 24,
+      "sequence": 24,
+      "topic": "At a Market/Shop",
+      "status": "source-imported",
+      "source": "glossika-day-15-25.md",
+      "prerequisite": "foundation-mixed-alphabets",
+      "sourceFile": "glossika-day-15-25.md",
+      "functionalLanguage": [
+        {
+          "id": "a1-week-24-glossika-functional-01",
+          "type": "functional-language",
+          "function": "Closing",
+          "functionId": "closing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ṭhik ache, tahole aj ei porjonto.",
+          "literalGloss": "",
+          "english": "Alright, that's all for today.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-24-glossika-functional-02",
+          "type": "functional-language",
+          "function": "Closing",
+          "functionId": "closing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "pore kotha hobe.",
+          "literalGloss": "",
+          "english": "We'll talk later.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-24-glossika-functional-03",
+          "type": "functional-language",
+          "function": "Closing",
+          "functionId": "closing",
+          "register": "standard",
+          "bengali": "",
+          "roman": "accha, coli.",
+          "literalGloss": "",
+          "english": "Okay, I'm off.",
+          "tamil": ""
+        }
+      ],
+      "vocabulary": [
+        {
+          "id": "a1-week-24-glossika-vocab-001",
+          "type": "vocabulary",
+          "bengali": "vegetable seller",
+          "roman": "",
+          "english": "śobojiōẇala",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-002",
+          "type": "vocabulary",
+          "bengali": "fishmonger",
+          "roman": "",
+          "english": "machōẇala",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-003",
+          "type": "vocabulary",
+          "bengali": "grocer",
+          "roman": "",
+          "english": "mudi",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-004",
+          "type": "vocabulary",
+          "bengali": "fruit shop",
+          "roman": "",
+          "english": "pholer dōkan",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-005",
+          "type": "vocabulary",
+          "bengali": "scale",
+          "roman": "",
+          "english": "dãṛipalla",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-006",
+          "type": "vocabulary",
+          "bengali": "basket",
+          "roman": "",
+          "english": "jhuṛi",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-007",
+          "type": "vocabulary",
+          "bengali": "sack",
+          "roman": "",
+          "english": "bosta",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-008",
+          "type": "vocabulary",
+          "bengali": "potato",
+          "roman": "",
+          "english": "alu",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-009",
+          "type": "vocabulary",
+          "bengali": "onion",
+          "roman": "",
+          "english": "pẽẏaj",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-010",
+          "type": "vocabulary",
+          "bengali": "garlic",
+          "roman": "",
+          "english": "rośun",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-011",
+          "type": "vocabulary",
+          "bengali": "ginger",
+          "roman": "",
+          "english": "ada",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-012",
+          "type": "vocabulary",
+          "bengali": "chili",
+          "roman": "",
+          "english": "loṅka",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-013",
+          "type": "vocabulary",
+          "bengali": "tomato",
+          "roman": "",
+          "english": "ṭomeṭō",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-014",
+          "type": "vocabulary",
+          "bengali": "eggplant",
+          "roman": "",
+          "english": "begun",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-015",
+          "type": "vocabulary",
+          "bengali": "lemon",
+          "roman": "",
+          "english": "lebu",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-016",
+          "type": "vocabulary",
+          "bengali": "orange",
+          "roman": "",
+          "english": "komlalebu",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-017",
+          "type": "vocabulary",
+          "bengali": "apple",
+          "roman": "",
+          "english": "apel",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-018",
+          "type": "vocabulary",
+          "bengali": "grape",
+          "roman": "",
+          "english": "aṅur",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-24-glossika-vocab-019",
+          "type": "vocabulary",
+          "bengali": "guava",
+          "roman": "",
+          "english": "peẏara",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        }
+      ],
+      "numbers": [],
+      "situationPatterns": [
+        {
+          "id": "a1-week-24-glossika-pattern-01",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "alu kot kore kilō?",
+          "literalGloss": "",
+          "english": "How much per kilo for potatoes?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-24-glossika-pattern-02",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ek kilō pẽẏaj din.",
+          "literalGloss": "",
+          "english": "Give me one kilo of onions.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-24-glossika-pattern-03",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "mach ṭaṭka tō?",
+          "literalGloss": "",
+          "english": "The fish is fresh, right?",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-24-glossika-pattern-04",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ekṭu bachai kore daō.",
+          "literalGloss": "",
+          "english": "Pick out the good ones for me.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-24-glossika-pattern-05",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śobo miliẏe ōjon korun.",
+          "literalGloss": "",
+          "english": "Weigh it all together.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-24-glossika-pattern-06",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ada ar rośun ekśoṅge din.",
+          "literalGloss": "",
+          "english": "Give me ginger and garlic together.",
+          "tamil": ""
+        }
+      ],
+      "dialogues": []
+    },
+    {
+      "id": "a1-week-25-glossika",
+      "level": "A1",
+      "week": 25,
+      "sequence": 25,
+      "topic": "Emergencies & Help",
+      "status": "source-imported",
+      "source": "glossika-day-15-25.md",
+      "prerequisite": "foundation-mixed-alphabets",
+      "sourceFile": "glossika-day-15-25.md",
+      "functionalLanguage": [],
+      "vocabulary": [
+        {
+          "id": "a1-week-25-glossika-vocab-001",
+          "type": "vocabulary",
+          "bengali": "help",
+          "roman": "",
+          "english": "śahajjo",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-002",
+          "type": "vocabulary",
+          "bengali": "danger",
+          "roman": "",
+          "english": "bipod",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-003",
+          "type": "vocabulary",
+          "bengali": "accident",
+          "roman": "",
+          "english": "durghoṭona",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-004",
+          "type": "vocabulary",
+          "bengali": "fire",
+          "roman": "",
+          "english": "agun laga",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-005",
+          "type": "vocabulary",
+          "bengali": "police",
+          "roman": "",
+          "english": "puliś",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-006",
+          "type": "vocabulary",
+          "bengali": "ambulance",
+          "roman": "",
+          "english": "êmbulenśo",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-007",
+          "type": "vocabulary",
+          "bengali": "fire brigade",
+          "roman": "",
+          "english": "domkol",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-008",
+          "type": "vocabulary",
+          "bengali": "thief",
+          "roman": "",
+          "english": "cōr",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-009",
+          "type": "vocabulary",
+          "bengali": "save",
+          "roman": "",
+          "english": "bãcaō",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-010",
+          "type": "vocabulary",
+          "bengali": "urgent",
+          "roman": "",
+          "english": "joruri",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-011",
+          "type": "vocabulary",
+          "bengali": "injured",
+          "roman": "",
+          "english": "ahot",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-012",
+          "type": "vocabulary",
+          "bengali": "clinic",
+          "roman": "",
+          "english": "cikitśakendro",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-013",
+          "type": "vocabulary",
+          "bengali": "first aid",
+          "roman": "",
+          "english": "prathomik cikitśa",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-014",
+          "type": "vocabulary",
+          "bengali": "bleeding",
+          "roman": "",
+          "english": "roktopat",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        },
+        {
+          "id": "a1-week-25-glossika-vocab-015",
+          "type": "vocabulary",
+          "bengali": "unconsciousness",
+          "roman": "",
+          "english": "gên",
+          "tamil": "",
+          "partOfSpeech": "word",
+          "oppositeId": ""
+        }
+      ],
+      "numbers": [],
+      "situationPatterns": [
+        {
+          "id": "a1-week-25-glossika-pattern-01",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śahajjo korun!",
+          "literalGloss": "",
+          "english": "Help!",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-25-glossika-pattern-02",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "taṛataṛi puliś ḍakun.",
+          "literalGloss": "",
+          "english": "Quickly call the police.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-25-glossika-pattern-03",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "ekṭa durghoṭona hoẏeche.",
+          "literalGloss": "",
+          "english": "There has been an accident.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-25-glossika-pattern-04",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "bãcaō! agun legeche!",
+          "literalGloss": "",
+          "english": "Help! There's a fire!",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-25-glossika-pattern-05",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "êmbulenśo dorkar, joruri.",
+          "literalGloss": "",
+          "english": "We need an ambulance, it's urgent.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-25-glossika-pattern-06",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "joruri nombore phōn korun.",
+          "literalGloss": "",
+          "english": "Call the emergency number.",
+          "tamil": ""
+        },
+        {
+          "id": "a1-week-25-glossika-pattern-07",
+          "type": "situation-pattern",
+          "register": "standard",
+          "bengali": "",
+          "roman": "śobai asroẏe jan.",
+          "literalGloss": "",
+          "english": "Everyone go to the shelter.",
+          "tamil": ""
+        }
+      ],
+      "dialogues": []
     }
   ]
 };
