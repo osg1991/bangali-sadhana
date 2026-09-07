@@ -7,7 +7,8 @@
   "scripts": {
     "sync:ramprasad": "node scripts/sync-ramprasad-v13.mjs",
     "sync:curriculum": "node scripts/sync-curriculum.mjs",
-    "sync:all": "npm run sync:ramprasad && npm run sync:curriculum",
+    "sync:glossika": "node scripts/sync-glossika-curriculum.mjs",
+    "sync:all": "npm run sync:ramprasad && npm run sync:curriculum && npm run sync:glossika",
     "build": "npm run sync:all && npm run validate",
     "test": "node --test",
     "validate": "node scripts/validate-app.mjs"
