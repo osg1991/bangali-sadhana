@@ -12,6 +12,7 @@ on:
       - content/ramprasad-vocabulary.json
       - content/curriculum/**
       - learning/curriculum-*
+      - glossika-day-15-25.md
       - tests/**
       - package.json
       - package-lock.json
@@ -23,6 +24,7 @@ on:
       - content/ramprasad-vocabulary.json
       - content/curriculum/**
       - learning/curriculum-*
+      - glossika-day-15-25.md
       - tests/**
       - package.json
       - package-lock.json
@@ -77,6 +79,10 @@ jobs:
       - name: Generate weekly topic curriculum
         working-directory: app
         run: npm run sync:curriculum
+
+      - name: Import Glossika Weeks 15-25 course content
+        working-directory: app
+        run: npm run sync:glossika
 
       - name: Run tests
         working-directory: app
